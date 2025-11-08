@@ -85,73 +85,27 @@
         qwerty_layer {
             label = "Qwerty";
             bindings = <
-                &kp Q      &kp W      &kp E             &kp R          &kp T     &none                                                &kp Z            &kp U          &kp I       &kp O      &kp P
-                &kp Q      &kp W      &kp E             &kp R          &kp T     &none                                                &kp Z            &kp U          &kp I       &kp O      &kp P
-                &hm LGUI A &hm LALT S &hm LCTRL D       &hm LSHIFT F   &kp G     &none                                                &kp H            &hm RSHIFT J   &hm RCTRL K &hm LALT L &hm LGUI QUOT
-                &kp Y      &kp X      &kp C             &kp V          &kp B     &none                                                &kp N            &kp M          &kp COMMA   &kp DOT    &kp FSLH
-                                      &none             &none         &none      &none      &none                 &none             &none         &none      &none      &none       
-                                                                                 &none      &none 
+                &kp ESC   &kp N1 &kp N2 &kp N3 &kp N4 &kp N5                                                 &kp N6 &kp N7 &kp N8    &kp N9  &kp N0   &kp DEL
+                &kp TAB    &kp Q  &kp W  &kp E  &kp R  &kp T                                                &kp Z  &kp U  &kp I     &kp O   &kp P    &kp MINUS
+                &kp LSHFT  &kp A  &kp S  &kp D  &kp F  &kp G                                                &kp H  &kp J  &kp K     &kp L   &kp SEMI &kp SQT
+                &&kp LCTRL &kp Y  &kp X  &kp C  &kp V  &kp B                                               &kp N  &kp M  &kp COMMA &kp DOT &kp FSLH &kp BSLH
+                                &kp F11    &kp F2   &kp ENTER    &kp SPACE    &kp BSPC          &kp DEL    &kp SPACE    &NAV_L    &kp HOME   &kp END    
+                                                                 &kp LALT    &LWIN               &RCTRL    &RALT
             >;
         };
 
         nav_layer {
             label = "Nav";
             bindings = <
-                &none     &none         &none       &none          &none         &kp INS         &kp HOME       &kp UARW    &kp END    &none
-                &kp LGUI   &kp LALT     &kp LCTRL   &kp LSHFT      &none         &kp PG_UP       &kp LARW       &kp DARW    &kp RARW   &none
-                &none     &none         &none       &none          &none         &kp PG_DN       &kp HOME       &kp PG_DN   &kp PG_UP  &none
-                                        &trans      &trans         &trans        &trans          &trans         &trans          
+                &none    &none    &none    &none    &none    &none                                   &none    &none    &none    &none    &none    &none
+                &none    &kp N1 &kp N2 &kp N3 &kp N4 &kp N5                                   &none    &none    &none    &none    &none    &none
+                &none    &none    &none    &none    &none    &none                                   &none    &none    &none    &none    &none    &none
+                &none    &none    &none    &none    &none    &none                                   &none    &none    &none    &none    &none    &none
+                                  &none    &none    &none    &none    &none        &none    &none    &none    &none    &none
+                                                             &none    &none        &none    &none         
             >;
-        };
-
-        other_layer {
-            label = "Other";
-            bindings = <
-                &none	        &none           &none           &none           &bt BT_CLR      &none           &none         &none       &none       &none
-                &none           &none           &none           &none           &none           &none           &to GAM_L    &none       &none       &none
-                &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4    &none           &none         &none       &none       &none
-                                &trans           &trans          &trans          &trans          &trans         &trans       
-            >;
-        };
-
-        num_layer {
-            label = "Num";
-            bindings = <
-                &none     &none         &none       &none          &none      &kp LBKT      &kp N7      &kp N8      &kp N9          &kp RBKT   
-                &none     &none         &none       &none          &none      &kp EQUAL     &kp N4      &kp N5      &kp N6          &kp SEMI  
-                &none     &none         &none       &none          &none      &kp BACKSLASH &kp N1      &kp N2      &kp N3          &kp GRAVE   
-                                        &trans       &trans        &trans     &kp MINUS        &kp N0      &trans       
-            >;
-        };
-
-        sym_layer {
-            label = "Sym";
-            bindings = <
-                &none     &none         &none       &none          &none    &kp LBRC     &kp LS(N7)  &kp LS(N8)  &kp LS(N9) &kp RBRC    
-                &none     &none         &none       &none          &none    &kp PLUS    &kp LS(N4)  &kp LS(N5)  &kp LS(N6) &kp COLON    
-                &none     &none         &none       &none          &none    &kp PIPE    &kp LS(N1)  &kp LS(N2)  &kp LS(N3) &kp TILDE
-                                        &trans      &trans         &trans   &kp UNDER    &kp LPAR    &kp RPAR          
-            >;
-        };
-
-        fun_layer {
-            label = "Fun";
-            bindings = <
-                &kp F12     &kp F7     &kp F8      &kp F9     &kp PSCRN         &trans          &trans         &trans      &trans     &trans
-                &kp F11     &kp F4     &kp F5      &kp F6     &kp SLCK          &trans          &trans         &trans      &trans     &trans
-                &kp F10     &kp F1     &kp F2      &kp F3     &kp PAUSE_BREAK   &trans          &trans         &trans      &trans     &trans
-                                       &none       &none      &none             &trans          &trans         &none        
-            >;
-        };
-
-        gam_layer {
-            label = "Gam";
-            bindings = <
-                &kp Q      &kp W      &kp E             &kp R          &kp T            &kp Z            &kp U          &kp I       &kp O      &td0
-                &kp A      &kp S      &kp D             &kp F          &kp G            &kp H            &kp J          &kp K       &kp L      &kp QUOT
-                &kp Y      &kp X      &kp C             &kp V          &kp B            &kp N            &kp M          &kp COMMA   &kp DOT    &kp FSLH
-                                      &kp ESC           &kp TAB        &kp SPACE        &kp RET          &kp BKSP       &kp DEL        
-            >;
+       
+        
         };
     };
 };
