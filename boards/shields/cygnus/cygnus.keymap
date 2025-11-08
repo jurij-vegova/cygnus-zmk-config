@@ -88,8 +88,8 @@
                 &kp ESC    &kp N1   &kp N2     &kp N3   &kp N4       &kp N5                                                    &kp N6       &kp N7     &kp N8      &kp N9  &kp N0   &kp DEL
                 &kp TAB    &kp Q    &kp W      &kp E    &kp R        &kp T                                                     &kp Z        &kp U      &kp I       &kp O   &kp P    &kp MINUS
                 &kp LSHFT  &kp A    &kp S      &kp D    &kp F        &kp G                                                     &kp H        &kp J      &kp K       &kp L   &none     &none
-                &kp LCTRL  &kp Y    &kp X      &kp C    &kp V        &kp B                                                     &kp N        &kp M      &kp COMMA   &kp DOT &none     &mo NUM_L
-                                    &kp F2    &kp F11   &kp ENTER    &kp SPACE    &kp BSPC                         &kp DEL    &kp SPACE    &mo NAV_L    &kp HOME   &kp END    
+                &kp LCTRL  &kp Y    &kp X      &kp C    &kp V        &kp B                                                     &kp N        &kp M      &kp COMMA   &kp DOT &none     &kp F11
+                                    &kp F2    &mo NUM_L   &kp ENTER    &kp SPACE    &kp BSPC                         &kp DEL    &kp SPACE    &mo NAV_L    &kp HOME   &kp END    
                                                                       &kp LALT    &kp LWIN                        &kp RCTRL     &kp RALT
             >;
         };
