@@ -85,35 +85,35 @@
         qwerty_layer {
             label = "Qwerty";
             bindings = <
-                &kp N6       &kp N7     &kp N8      &kp N9  &kp N0   &kp DEL                                  &kp ESC    &kp N1   &kp N2     &kp N3   &kp N4       &kp N5                                                    
-                &kp Z        &kp U      &kp I       &kp O   &kp P    &kp MINUS                                &kp TAB    &kp Q    &kp W      &kp E    &kp R        &kp T                                                     
-                &kp H        &kp J      &kp K       &kp L   &none     &none                                   &kp LSHFT  &kp A    &kp S      &kp D    &kp F        &kp G                                                     
-                &kp N        &kp M      &kp COMMA   &kp DOT &none     &none                                 &kp LCTRL  &kp Y    &kp X      &kp C    &kp V        &kp B                                                     
-    kp DEL    &kp SPACE    &mo NAV_L    &kp HOME   &kp END                                                                       &kp LWIN   &mo NUM_L  &kp ENTER   &kp SPACE    &kp BSPC                                                                                            &
-      &kp RCTRL     &kp RALT                                                                                                                                       &kp LALT    & kp F11                                                                                                                                               
+                &kp N6       &kp N7     &kp N8      &kp N9  &kp N0   &kp DEL                                  &kp ESC    &kp N1   &kp N2     &kp N3   &kp N4       &kp N5
+                &kp Z        &kp U      &kp I       &kp O   &kp P    &kp MINUS                                &kp TAB    &kp Q    &kp W      &kp E    &kp R        &kp T
+                &kp H        &kp J      &kp K       &kp L   &none     &none                                   &kp LSHFT  &kp A    &kp S      &kp D    &kp F        &kp G
+                &kp N        &kp M      &kp COMMA   &kp DOT &none     &none                                 &kp LCTRL  &kp Y    &kp X      &kp C    &kp V        &kp B
+    &kp DEL    &kp SPACE    &mo NAV_L    &kp HOME   &kp END                                                                       &kp LWIN   &mo NUM_L  &kp ENTER   &kp SPACE    &kp BSPC
+      &kp RCTRL     &kp RALT                                                                                                                                       &kp LALT    &kp F11
             >;
         };
 
         nav_layer {
             label = "Nav";
             bindings = <
-               &kp F6    &kp F7    &kp F8    &kp F9    &kp F10    &kp F12                                                             &kp ESC            &kp F1            &kp F2            &kp F3         &kp F4            &kp F5                                   
-                &kp RPAR    &kp PLUS    &kp STAR    &kp QMARK    &kp APOS    &kp CARET                                                &kp TAB            &kp BSLH          &kp PIPE         &kp UP          &kp AMPS          &kp LPAR                               
-                &kp RBKT    &kp MINUS    &kp UNDER    &kp TILDE    &none    &none                                                     &kp LSHIFT         &none              &kp LEFT        &kp DOWN        &kp RIGHT         &kp LBKT                                
-                &kp RBRC    &none    &none    &none    &none    &mo OTH_L                                                                &kp LCTRL          &none            &none          &none           &kp AT            &kp LBRC                                   
-     &kp DEL    &kp SPACE    &none    &kp HOME    &kp END                                                                                                                   &none           &kp F11         &kp ENTER         &kp SPACE      &none                                            
-    &kp RCTRL    &kp RALT                                                                                                                                                                                                      &kp LALT    &kp LWIN                                         
+               &kp F6    &kp F7    &kp F8    &kp F9    &kp F10    &kp F12                                                             &kp ESC            &kp F1            &kp F2            &kp F3         &kp F4            &kp F5
+                &kp RPAR    &kp PLUS    &kp STAR    &kp QMARK    &kp APOS    &kp CARET                                                &kp TAB            &kp BSLH          &kp PIPE         &kp UP          &kp AMPS          &kp LPAR
+                &kp RBKT    &kp MINUS    &kp UNDER    &kp TILDE    &none    &none                                                     &kp LSHIFT         &none              &kp LEFT        &kp DOWN        &kp RIGHT         &kp LBKT
+                &kp RBRC    &none    &none    &none    &none    &mo OTH_L                                                                &kp LCTRL          &none            &none          &none           &kp AT            &kp LBRC
+     &kp DEL    &kp SPACE    &none    &kp HOME    &kp END                                                                                                                    &kp LWIN   &mo NUM_L  &kp ENTER   &kp SPACE    &none
+    &kp RCTRL    &kp RALT                                                                                                                                                                                                     &kp LALT    &kp F11
             >;
         };
         other_layer {
             label = "Other";
             bindings = <
-            &bt BT_CLR   &none   &none   &none   &none   &none   &none                               &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4                       
-             &none   &none   &none   &none   &none   &none                                            &none   &none   &none   &none   &none   &none 
-            &none   &none   &none   &none   &none   &none                                              &none   &none   &none   &none   &none   &none 
-             &none   &none   &none   &none   &none   &none                                              &none   &none   &none   &none   &none   &none 
-    &none   &none   &none   &none   &none                                                                              &none   &none   &none   &none   &none   
-    &none   &none                                                                                                                            &none   &none 
+            &bt BT_CLR   &none   &none   &none   &none   &none   &none                               &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4
+             &none   &none   &none   &none   &none   &none                                            &none   &none   &none   &none   &none   &none
+            &none   &none   &none   &none   &none   &none                                              &none   &none   &none   &none   &none   &none
+             &none   &none   &none   &none   &none   &none                                              &none   &none   &none   &none   &none   &none
+    &none   &none   &none   &none   &none                                                                              &none   &none   &none   &none   &none
+    &none   &none                                                                                                                            &none   &none
             >;
         };
 
