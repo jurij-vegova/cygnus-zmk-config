@@ -55,8 +55,8 @@
         combo_bksp {
             timeout-ms = <50>;
             require-prior-idle-ms = <200>;
-            key-positions = <17 18>;
-            bindings = <&kp BKSP>;
+            key-positions = <24 52>;
+            bindings = <&kp DEL>;
         };
         combo_capslck {
             timeout-ms = <50>;
@@ -101,8 +101,8 @@
                 &kp TAB            &kp BSLH          &kp PIPE     &kp UP         &kp AMPS     &kp LPAR                               &kp RPAR    &kp PLUS    &kp STAR    &kp QMARK    &kp APOS    &kp CARET
                 &kp LSHIFT         &none              &kp LEFT        &kp DOWN        &kp RIGHT        &kp LBKT                                 &kp RBKT    &kp MINUS    &kp UNDER    &kp TILDE    &none    &none
                 &kp LCTRL          &none            &none        &none         &kp AT        &kp LBRC                                   &kp RBRC    &none    &none    &none    &none    &mo OTH_L
-                                  &nkp F11    &none    &kp ENTER    &kp SPACE    &none                                          &kp DEL    &kp SPACE    &none    &kp HOME    &kp END
-                                                             &kp LALT    &kp LWIN                                        &kp RCTRL    &kp RALT         
+                                  &kp F11    &none    &kp ENTER    &kp SPACE    &none                                          &kp DEL    &kp SPACE    &none    &kp HOME    &kp END
+                                                             &kp LWIN    &kp LALT                                        &kp RALT    &kp RCTRL         
             >;
         };
         other_layer {
