@@ -18,37 +18,7 @@
 #define GAM_L 6
 
 / {
-    behaviors {
-        hm: homerow_mods {
-            compatible = "zmk,behavior-hold-tap";
-            label = "homerow mods";
-            #binding-cells = <2>;
-            tapping_term_ms = <200>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
-        };
 
-        td0: tap_dance_home {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp P>, <&to HOM_L>;
-        };
-
-        td_lshift: tap_dance_caps_l {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&hm LSHIFT F>, <&sk LSHIFT>, <&kp CAPS>;
-        };
-
-        td_rshift: tap_dance_caps_r {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&hm LSHIFT J>, <&sk RSHIFT>, <&kp CAPS>;
-        };
-    };
 
     combos {
         compatible = "zmk,combos";
@@ -57,25 +27,6 @@
             require-prior-idle-ms = <200>;
             key-positions = <24 52>;
             bindings = <&kp DEL>;
-        };
-        combo_capslck {
-            timeout-ms = <50>;
-            require-prior-idle-ms = <200>;
-            key-positions = <10 11>;
-            bindings = <&kp CAPS>;
-        };
-        combo_tab {
-            timeout-ms = <50>;
-            require-prior-idle-ms = <200>;
-            key-positions = <11 12>;
-            bindings = <&kp TAB>;
-        };
-        combo_home_layer {
-            timeout-ms = <50>;
-            require-prior-idle-ms = <200>;
-            key-positions = <9 33>;
-            bindings = <&to HOM_L>;
-            layers = <GAM_L>;
         };
     };
 
