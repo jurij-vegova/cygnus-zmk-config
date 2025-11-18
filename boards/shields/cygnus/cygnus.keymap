@@ -35,10 +35,10 @@
             bindings = <
                 &kp ESC    &kp N1   &kp N2     &kp N3   &kp N4       &kp N5                                                   &kp N6       &kp N7     &kp N8      &kp N9  &kp N0   &kp DEL
                 &kp TAB    &kp Q    &kp W      &kp E    &kp R        &kp T                                                     &kp Z        &kp U      &kp I       &kp O   &kp P    &kp LBKT
-                &kp LSHFT  &kp A    &kp S      &kp D    &kp F        &kp G                                                     &kp H        &kp J      &kp K       &kp L   &kp SEMI   &kp BSLH
-                &kp LCTRL  &kp Y    &kp X      &kp C    &kp V        &kp B                                                     &kp N        &kp M      &kp COMMA   &kp DOT &none     &none
+                &kp LSHFT  &kp A    &kp S      &kp D    &kp F        &kp G                                                     &kp H        &kp J      &kp K       &kp L   &kp SEMI   &kp RSHFT
+                &kp LCTRL  &kp Y    &kp X      &kp C    &kp V        &kp B                                                     &kp N        &kp M      &kp COMMA   &kp DOT &kp BSLH     &kp RCTRL
                                     &kp F11    &kp F2   &kp ENTER    &kp SPACE    &kp BSPC                         &kp DEL    &kp SPACE    &mo NAV_L    &kp HOME   &kp END    
-                                                                      &kp LWIN    &kp LALT                        &kp RALT     &kp RCTRL
+                                                                      &kp LWIN    &kp LALT                        &kp RALT     &none
             >;
         };
 
@@ -48,9 +48,9 @@
                 &kp ESC            &kp F1                 &kp F2            &kp F3           &kp F4            &kp F5                                        &kp F6         &kp F7           &kp F8               &kp F9             &kp F10        &kp F12
                 &kp TAB            &none                 &none              &kp UP           &none            &kp STAR                                       &kp LPAR       &kp PLUS         &kp LSHIFT(PLUS)     &kp UNDER          &kp MINUS      &none
                 &kp LSHIFT         &none                 &kp LEFT           &kp DOWN         &kp RIGHT         &kp RALT(F)                                  &kp RALT(G)   &kp FSLH          &kp LSHIFT(FSLH)     &RALT(N1)          &none          &none
-                &kp LCTRL          &none                  &none            &none             &kp RALT(V)       &kp RALT(B)                                  &kp RALT(N)    &kp LSHIFT(N0)   &kp RALT(COMMA)      &kp RALT(DOT)      &none          &mo OTH_L
+                &kp LCTRL          &none                  &none            &none             &kp RALT(V)       &kp RALT(B)                                  &kp RALT(N)    &kp LSHIFT(N0)   &kp RALT(COMMA)      &kp RALT(DOT)      &none          &kp RCTRL
                                                         &kp F11            &kp F2            &kp ENTER         &kp SPACE      &none              &kp DEL    &kp SPACE    &none    &kp HOME    &kp END
-                                                                                                               &kp LWIN       &kp LALT           &kp RALT    &kp RCTRL         
+                                                                                                               &kp LWIN       &kp LALT           &kp RALT    &mo OTH_L    
             >
         };
         other_layer {
