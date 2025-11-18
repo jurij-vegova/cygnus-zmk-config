@@ -46,9 +46,9 @@
             label = "Nav";
             bindings = <
                 &kp ESC            &kp F1                 &kp F2            &kp F3           &kp F4            &kp F5                                        &kp F6         &kp F7           &kp F8               &kp F9             &kp F10        &kp F12
-                &kp TAB            &kp RA(Q)                 &kp RA(W)              &kp UP           &none            &kp STAR                                       &kp LPAR       &kp PLUS         &kp LS(PLUS)     &kp UNDER          &kp MINUS      &none
-                &kp LSHIFT         &none                 &kp LEFT           &kp DOWN         &kp RIGHT         &kp RA(F)                                  &kp RA(G)   &kp FSLH          &kp LS(FSLH)     &kp RA(N1)          &none          &kp RSHFT
-                &kp LCTRL          &none                  &none            &none             &kp RA(V)       &kp RA(B)                                  &kp RA(N)    &kp LS(N0)   &kp RA(COMMA)      &kp RA(DOT)      &none          &kp RCTRL
+                &kp TAB            &mt RALT Q                 &mt RALT W              &kp UP           &none            &kp STAR                                       &kp LPAR       &kp PLUS         &mt LSHIFT PLUS     &kp UNDER          &kp MINUS      &none
+                &kp LSHIFT         &none                 &kp LEFT           &kp DOWN         &kp RIGHT         &mt RALT F                                  &mt RALT G   &kp FSLH          &mt LSHIFT FSLH     &mt RALT N1          &none          &kp RSHFT
+                &kp LCTRL          &none                  &none            &none             &mt RALT V       &mt RALT B                                  &mt RALT N    &mt LSHIFT N0   &mt RALT COMMA      &mt RALT DOT      &none          &kp RCTRL
                                                         &kp F11            &kp F2            &kp ENTER         &kp SPACE      &none              &kp DEL    &kp SPACE    &none    &kp HOME    &kp END
                                                                                                                &kp LWIN       &kp LALT           &kp RALT    &mo OTH_L    
             >;
