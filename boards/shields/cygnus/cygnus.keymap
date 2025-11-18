@@ -48,7 +48,7 @@
                 &kp ESC            &kp F1                 &kp F2            &kp F3           &kp F4            &kp F5                                        &kp F6         &kp F7           &kp F8               &kp F9             &kp F10        &kp F12
                 &kp TAB            &none                 &none              &kp UP           &none            &kp STAR                                       &kp LPAR       &kp PLUS         &kp LSHIFT(PLUS)     &kp UNDER          &kp MINUS      &none
                 &kp LSHIFT         &none                 &kp LEFT           &kp DOWN         &kp RIGHT         &kp RALT(F)                                  &kp RALT(G)   &kp FSLH          &kp LSHIFT(FSLH)     &RALT(N1)          &none          &none
-                &kp LCTRL          &none                  &none            &none             &kp RALT(V)       &kp RALT(B)                                  &kp RALT(N)    &kp LSHIFT(N0)   &kp RALT(COMMQ)      &kp RALT(DOT)      &none          &mo OTH_L
+                &kp LCTRL          &none                  &none            &none             &kp RALT(V)       &kp RALT(B)                                  &kp RALT(N)    &kp LSHIFT(N0)   &kp RALT(COMMA)      &kp RALT(DOT)      &none          &mo OTH_L
                                                         &kp F11            &kp F2            &kp ENTER         &kp SPACE      &none              &kp DEL    &kp SPACE    &none    &kp HOME    &kp END
                                                                                                                &kp LWIN       &kp LALT           &kp RALT    &kp RCTRL         
             >
