@@ -111,9 +111,9 @@
            label = "Nav";
            bindings = <
                &kp ESC            &kp F1                 &kp F2            &kp F3           &kp F4            &kp F5                                        &kp F6         &kp F7           &kp F8               &kp F9             &kp F10        &kp F12
-               &kp TAB            &alt_Q                 &alt_W            &kp UP             &none            &kp STAR                                       &kp LPAR       &kp EQUAL         &kp PLUS     &kp MINUS         &none      &none
+               &kp TAB            &alt_q                 &alt_w           &kp UP             &none            &kp STAR                                       &kp LPAR       &kp EQUAL         &kp PLUS     &kp MINUS         &none      &none
                &kp LSHIFT         &none                 &kp LEFT           &kp DOWN         &kp RIGHT         &alt_f                                 &none &kp FSLH          &none     &none          &none          &kp RSHFT
-               &kp LCTRL          &none                  &none            &none             &alt_V       &alt_B                                  &alt_N    &none   &none      &none     &none          &mo OTH_L
+               &kp LCTRL          &none                  &none            &none             &alt_v       &alt_b                                  &alt_n    &none   &none      &none     &none          &mo OTH_L
                                                        &kp F11            &kp F2            &kp ENTER         &kp SPACE      &none              &kp DEL    &kp SPACE    &none    &kp HOME    &kp END
                                                                                                               &kp LWIN       &kp LALT           &kp RALT    &kp RCTRL    
   
