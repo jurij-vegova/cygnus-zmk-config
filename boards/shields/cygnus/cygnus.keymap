@@ -35,6 +35,22 @@ macros {
         label = "RCRUVY";
         bindings = <&kp RA(N)>;
     };
+    EQUAL{
+        label = "EQUAL";
+        bindings = <&kp LS(N0)>;
+    };
+    MORE{
+        label = "MORE";
+        bindings = <&kp RA(COMMA)>;
+    };
+    LESS{
+        label = "LESS";
+        bindings = <&kp RA(DOT)>;
+    };
+    PLUS{
+        label = "PLUS";
+        bindings = <&kp LS(PLUS)>;
+    };
 };
 
     combos {
@@ -56,7 +72,7 @@ macros {
                 &kp ESC    &kp N1   &kp N2     &kp N3   &kp N4       &kp N5                                                   &kp N6       &kp N7     &kp N8      &kp N9  &kp N0   &none
                 &kp TAB    &kp Q    &kp W      &kp E    &kp R        &kp T                                                     &kp Y        &kp U      &kp I       &kp O   &kp P    &kp LBKT
                 &kp LSHFT  &kp A    &kp S      &kp D    &kp F        &kp G                                                     &kp H        &kp J      &kp K       &kp L   &kp SEMI   &kp RSHFT
-                &kp LCTRL  &kp Z    &kp X      &kp C    &kp V        &kp B                                                     &kp N        &kp M      &kp COMMA   &kp DOT &kp BSLH     &none
+                &kp LCTRL  &kp Z    &kp X      &kp C    &kp V        &kp B                                                     &kp N        &kp M      &MORE      &LESS    &kp BSLH     &none
                                     &kp F11    &kp F2   &kp ENTER    &kp SPACE    &kp BSPC                         &kp DEL    &kp SPACE    &mo NAV_L    &kp HOME   &kp END    
                                                                       &kp LWIN    &kp LALT                        &kp RALT     &kp RCTRL
             >;
@@ -66,9 +82,9 @@ macros {
             label = "Nav";
             bindings = <
                 &kp ESC            &kp F1                 &kp F2            &kp F3           &kp F4            &kp F5                                        &kp F6         &kp F7           &kp F8               &kp F9             &kp F10        &kp F12
-                &kp TAB            &mt RALT Q                 &mt RALT W              &kp UP           &none            &kp STAR                                       &kp LPAR       &kp PLUS         &mt LSHIFT PLUS     &kp UNDER          &kp MINUS      &none
+                &kp TAB            &mt RALT Q            &mt RALT W         &kp UP          &none            &kp STAR                                       &kp LPAR       & PLUS         &kp PLUS     &kp UNDER          &kp MINUS      &none
                 &kp LSHIFT         &none                 &kp LEFT           &kp DOWN         &kp RIGHT         &LBKT                                  &RBKT  &kp FSLH          &mt LSHIFT FSLH     &mt RALT N1          &none          &kp RSHFT
-                &kp LCTRL          &none                  &none            &none             &mt RALT V       &LCRUVY                                  &RCRUVY    &mt LSHIFT N0   &mt RALT COMMA      &mt RALT DOT      &none          &kp RCTRL
+                &kp LCTRL          &none                  &none            &none             &mt RALT V       &LCRUVY                                  &RCRUVY    &EQUAL   &mt RALT COMMA      &mt RALT DOT      &none          &kp RCTRL
                                                         &kp F11            &kp F2            &kp ENTER         &kp SPACE      &none              &kp DEL    &kp SPACE    &none    &kp HOME    &kp END
                                                                                                                &kp LWIN       &kp LALT           &kp RALT    &mo OTH_L    
             >;
