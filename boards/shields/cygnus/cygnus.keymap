@@ -16,8 +16,6 @@
 
 / {
 
-
-
     combos {
         compatible = "zmk,combos";
         combo_bksp {
@@ -27,6 +25,18 @@
             bindings = <&kp DEL>;
         };
     };  
+
+    behaviors {
+        compatible = "zmk,behaviors";
+
+        shift_1: shift_1 {
+            compatible = "zmk,behavior-macro";
+            label = "Shift+1";
+            #binding-cells = <0>;
+            macro-keys = <&kp LSFT &kp N1>;   /* Sends Shift+1 */
+        };
+
+    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -47,9 +57,9 @@
             label = "Nav";
             bindings = <
                 &kp ESC            &kp F1                 &kp F2            &kp F3           &kp F4            &kp F5                                        &kp F6         &kp F7           &kp F8               &kp F9             &kp F10        &kp F12
-                &kp TAB            &none                 &none             &kp UP             &none            &kp STAR                                       &kp LPAR       &kp EQUAL         &kp PLUS     &kp MINUS          &kp LS(N2)      &none
-                &kp LSHIFT         &none                 &kp LEFT           &kp DOWN         &kp RIGHT         &kp RA(F)                                  &kp RA(G)  &kp SLSH          &kp LS(SLSH)     &kp LS(MINUS)          &kp LS(N1)          &kp RSHFT
-                &kp LCTRL          &none                  &none            &none             &kp RA(V)       &kp RA(B)                                  &kp RA(N)    &kp LS(N0)   &kp RA(COMMA)      &kp RA(DOT)     &none          &mo OTH_L
+                &kp TAB            &none                 &none             &kp UP             &none            &kp STAR                                       &kp LPAR       &kp EQUAL         &kp PLUS     &kp MINUS         &none      &none
+                &kp LSHIFT         &none                 &kp LEFT           &kp DOWN         &kp RIGHT         &none                                  &none  &kp SLSH          &none     &none          &shift_1          &kp RSHFT
+                &kp LCTRL          &none                  &none            &none             &none       &none                                  &none    &none   &none      &none     &none          &mo OTH_L
                                                         &kp F11            &kp F2            &kp ENTER         &kp SPACE      &none              &kp DEL    &kp SPACE    &none    &kp HOME    &kp END
                                                                                                                &kp LWIN       &kp LALT           &kp RALT    &kp RCTRL    
             >;
