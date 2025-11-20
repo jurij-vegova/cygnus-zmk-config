@@ -29,9 +29,6 @@
 behaviors {
     compatible = "zmk,behaviors";
 
-behaviors {
-    compatible = "zmk,behaviors";
-
     alt_F {
         label = "ALT_F";
         compatible = "zmk,macro";
