@@ -25,6 +25,19 @@
         };
     };  
 
+behaviors {
+    compatible = "zmk,behaviors";
+
+    alt_f {
+        label = "ALT_F";
+        compatible = "zmk,macro";
+        #binding-cells = <0>;
+        mods = <RALT>;
+        tap-keys = <&kp F>;  
+    };
+};
+
+
     keymap {
         compatible = "zmk,keymap";
 
