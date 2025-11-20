@@ -57,27 +57,6 @@ behaviors {
         mods = <RALT>;
         tap-keys = <&kp Q>;  
     };
-    alt_V {
-        label = "ALT_V";
-        compatible = "zmk,macro";
-        #binding-cells = <0>;
-        mods = <RALT>;
-        tap-keys = <&kp V>;  
-    };
-    alt_B {
-        label = "ALT_B";
-        compatible = "zmk,macro";
-        #binding-cells = <0>;
-        mods = <RALT>;
-        tap-keys = <&kp B>;
-    };
-    alt_N {
-        label = "ALT_N";
-        compatible = "zmk,macro";
-        #binding-cells = <0>;
-        mods = <RALT>;
-        tap-keys = <&kp N>;
-    };
 };
 
     keymap {
@@ -100,8 +79,8 @@ behaviors {
             bindings = <
                 &kp ESC            &kp F1                 &kp F2            &kp F3           &kp F4            &kp F5                                              &kp F6         &kp F7            &kp F8        &kp F9            &kp F10        &kp F12                                                              
                 &kp TAB            &alt_Q                 &alt_W            &kp UP             &none            &kp STAR                                           &kp LPAR       &kp EQUAL         &kp PLUS      &kp MINUS         &none          &none
-                &kp LSHIFT         &none                 &kp LEFT           &kp DOWN         &kp RIGHT         &alt_F                                             &alt_G          &kp FSLH          &none         &none             &none          &kp RSHFT
-                &kp LCTRL          &none                  &none            &none             &alt_V           &alt_B                                                    &alt_N           &none             &none          &none             &none         &mo OTH_L
+                &kp LSHIFT         &none                 &kp LEFT           &kp DOWN         &kp RIGHT         &none                                             &none         &kp FSLH          &none         &none             &none          &kp RSHFT
+                &kp LCTRL          &none                  &none            &none             &none           &none                                                    &none          &none             &none          &none             &none         &mo OTH_L
                                                         &kp F11            &kp F2            &kp ENTER         &kp SPACE      &none                     &kp DEL   &kp SPACE       &none             &kp HOME       &kp END
                                                                                                                &kp LWIN       &kp LALT                  &kp RALT   &kp RCTRL    
             >;
