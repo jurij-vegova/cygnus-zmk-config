@@ -25,6 +25,7 @@
         };
     };  
 
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -48,14 +49,7 @@
                &kp LCTRL          &none                  &none            &none             &none       &none                                  &none    &none   &none      &none     &none          &mo OTH_L
                                                        &kp F11            &kp F2            &kp ENTER         &kp SPACE      &none              &kp DEL    &kp SPACE    &none    &kp HOME    &kp END
                                                                                                               &kp LWIN       &kp LALT           &kp RALT    &kp RCTRL    
-          bindings = <
-              &kp ESC            &kp F1                 &kp F2            &kp F3           &kp F4            &kp F5                                              &kp F6         &kp F7            &kp F8        &kp F9            &kp F10        &kp F12                                                              
-              &kp TAB            &none                  &none             &kp UP             &none            &kp STAR                                           &kp LPAR       &kp EQUAL         &kp PLUS      &kp MINUS         &none          &none
-              &kp LSHIFT         &none                 &kp LEFT           &kp DOWN         &kp RIGHT         &none                                             &none         &kp FSLH          &none         &none             &none          &kp RSHFT
-              &kp LSHIFT         &none                 &kp LEFT           &kp DOWN         &kp RIGHT         &kp F                                             &none         &kp FSLH          &none         &none             &none          &kp RSHFT
-              &kp LCTRL          &none                  &none            &none             &none           &none                                                    &none          &none             &none          &none             &none         &mo OTH_L
-                                                      &kp F11            &kp F2            &kp ENTER         &kp SPACE      &none                     &kp DEL   &kp SPACE       &none             &kp HOME       &kp END
-                                                                                                             &kp LWIN       &kp LALT                  &kp RALT   &kp RCTRL    
+  
            >;
        };
        other_layer {
