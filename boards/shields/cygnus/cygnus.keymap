@@ -26,16 +26,14 @@
     };  
 
 behaviors {
-    compatible = "zmk,behaviors";
-
-    alt_F {
-        label = "ALT_F";
-        compatible = "zmk,macro";
-        #binding-cells = <0>;
-        mods = <RALT>;
-        tap-keys = <&kp F>;  
+        alt_F: alt_F {
+            compatible = "zmk,behavior-mod-morph";
+            label = "Alt F";
+            #binding-cells = <0>;
+            tap = <&kp F>;
+            hold-mods = <LALT>;
+        };
     };
-};
 
 
     keymap {
