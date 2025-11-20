@@ -17,10 +17,9 @@
 / {
 
 macros {
-        compatible = "zmk,macros";
+    compatible = "zmk,macros";
 
-        LBKT: LBKT {
-        compatible = "zmk,behavior-macro";
+    LBKT {
         label = "LBKT";
         bindings = <&kp RALT(F)>;
     };
