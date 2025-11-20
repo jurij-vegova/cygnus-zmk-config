@@ -21,19 +21,19 @@ macros {
 
     LBKT {
         label = "LBKT";
-        bindings = <&kp RALT(F)>;
+        bindings = <&kp RA(F)>;
     };
     RBKT {
         label = "RBKT";
-        bindings = <&kp RALT(G)>;
+        bindings = <&kp RA(G)>;
     }; 
     LCRUVY{
         label = "LCRUVY";
-        bindings = <&kp RALT(B)>;
+        bindings = <&kp RA(B)>;
     };
     RCRUVY{
         label = "RCRUVY";
-        bindings = <&kp RALT(N)>;
+        bindings = <&kp RA(N)>;
     };
 };
 
