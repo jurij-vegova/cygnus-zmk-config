@@ -15,29 +15,6 @@
 
 / {
 
-    combos {
-        compatible = "zmk,combos";
-        combo_bksp {
-            timeout-ms = <50>;
-            require-prior-idle-ms = <200>;
-            key-positions = <27 28>;
-            bindings = <&kp DEL>;
-        };
-    };  
-
-behaviors {
-    compatible = "zmk,behaviors";
-
-    alt_f: alt_f {
-        label = "ALT_F";
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <0>;
-        bindings = <&kp F>;
-        hold-mods = <MOD_RALT>; 
-    };
-};
-
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -57,7 +34,7 @@ behaviors {
            bindings = <
                &kp ESC            &kp F1                 &kp F2            &kp F3           &kp F4            &kp F5                                        &kp F6         &kp F7           &kp F8               &kp F9             &kp F10        &kp F12
                &kp TAB            &none                 &none            &kp UP             &none            &kp STAR                                       &kp LPAR       &kp EQUAL         &kp PLUS     &kp MINUS         &none      &none
-               &kp LSHIFT         &none                 &kp LEFT           &kp DOWN         &kp RIGHT         &alt_f                                 &none &kp FSLH          &none     &none          &none          &kp RSHFT
+               &kp LSHIFT         &none                 &kp LEFT           &kp DOWN         &kp RIGHT         &none                                 &none &kp FSLH          &none     &none          &none          &kp RSHFT
                &kp LCTRL          &none                  &none            &none             &none       &none                                  &none    &none   &none      &none     &none          &mo OTH_L
                                                        &kp F11            &kp F2            &kp ENTER         &kp SPACE      &none              &kp DEL    &kp SPACE    &none    &kp HOME    &kp END
                                                                                                               &kp LWIN       &kp LALT           &kp RALT    &kp RCTRL    
