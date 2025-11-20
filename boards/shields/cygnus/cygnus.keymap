@@ -16,6 +16,15 @@
 
 / {
 
+macros {
+        compatible = "zmk,macros";
+
+        copy_macro: copy_macro {
+        compatible = "zmk,behavior-macro";
+        label = "COPY";
+        bindings = <&kp LC(C)>;
+    };
+};
 
     combos {
         compatible = "zmk,combos";
