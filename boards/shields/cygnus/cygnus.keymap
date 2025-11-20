@@ -28,12 +28,12 @@
 behaviors {
     compatible = "zmk,behaviors";
 
-    alt_f {
+    alt_f: alt_f {
         label = "ALT_F";
-        compatible = "zmk,macro";
+        compatible = "zmk,behavior-mod-morph";
         #binding-cells = <0>;
-        mods = <RALT>;
-        tap-keys = <&kp F>;  
+        tap = <&kp F>;
+        hold-mods = <MOD_RALT>;
     };
 };
 
