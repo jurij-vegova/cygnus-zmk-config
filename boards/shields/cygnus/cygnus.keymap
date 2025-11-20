@@ -32,8 +32,8 @@ behaviors {
         label = "ALT_F";
         compatible = "zmk,behavior-mod-morph";
         #binding-cells = <0>;
-        tap = <&kp F>;
-        hold-mods = <MOD_RALT>;
+        bindings = <&kp F>;
+        hold-mods = <MOD_RALT>; 
     };
 };
 
