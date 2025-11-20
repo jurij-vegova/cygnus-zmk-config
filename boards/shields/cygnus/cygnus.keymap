@@ -37,42 +37,42 @@ behaviors {
         tap-keys = <&kp F>;  
     };
     alt_G {
-        label = "ALT_F";
+        label = "ALT_G";
         compatible = "zmk,macro";
         #binding-cells = <0>;
         mods = <RALT>;
         tap-keys = <&kp G>;  
     };
     alt_W {
-        label = "ALT_F";
+        label = "ALT_W";
         compatible = "zmk,macro";
         #binding-cells = <0>;
         mods = <RALT>;
         tap-keys = <&kp W>;  
     };
     alt_Q {
-        label = "ALT_F";
+        label = "ALT_Q";
         compatible = "zmk,macro";
         #binding-cells = <0>;
         mods = <RALT>;
         tap-keys = <&kp Q>;  
     };
     alt_V {
-        label = "ALT_F";
+        label = "ALT_V";
         compatible = "zmk,macro";
         #binding-cells = <0>;
         mods = <RALT>;
         tap-keys = <&kp V>;  
     }; 
     alt_B {
-        label = "ALT_F";
+        label = "ALT_B";
         compatible = "zmk,macro";
         #binding-cells = <0>;
         mods = <RALT>;
         tap-keys = <&kp B>;  
     }; 
     alt_N {
-        label = "ALT_F";
+        label = "ALT_N";
         compatible = "zmk,macro";
         #binding-cells = <0>;
         mods = <RALT>;
