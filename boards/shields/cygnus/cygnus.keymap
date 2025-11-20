@@ -16,54 +16,7 @@
 
 / {
 
-macros {
-    compatible = "zmk,macros";
 
-    LBKT_macro {
-        label = "LBKT_macro";
-        bindings = <&kp RA(F)>;
-    };
-    RBKT_macro {
-        label = "RBKT_macro";
-        bindings = <&kp RA(G)>;
-    }; 
-    LCRUVY_macro{
-        label = "LCRUVY_macro";
-        bindings = <&kp RA(B)>;
-    };
-    RCRUVY_macro{
-        label = "RCRUVY_macro";
-        bindings = <&kp RA(N)>;
-    };
-    EQUAL_macro{
-        label = "EQUAL_macro";
-        bindings = <&kp LS(N0)>;
-    };
-    MORE_macro{
-        label = "MORE_macro";
-        bindings = <&kp RA(COMMA)>;
-    };
-    LESS_macro{
-        label = "LESS_macro";
-        bindings = <&kp RA(DOT)>;
-    };
-    PLUS_macro{
-        label = "PLUS_macro";
-        bindings = <&kp LS(PLUS)>;
-    };
-    UNDER_macro{
-        label = "UNDER_macro";
-        bindings = <&kp LS(FSLH)>;
-    };
-    AT_macro{
-        label = "AT_macro";
-        bindings = <&kp RA(V)>;
-    };
-    EXCLAMATION_macro{
-        label = "EXCLAMATION_macro";
-        bindings = <&kp RA(N1)>;
-    };
-};
 
     combos {
         compatible = "zmk,combos";
