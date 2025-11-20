@@ -54,6 +54,7 @@ macros {
     UNDER_macro{
         label = "UNDER_macro";
         bindings = <&kp LS(FSLH)>;
+    };
     AT_macro{
         label = "AT_macro";
         bindings = <&kp RA(V)>;
