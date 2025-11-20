@@ -1,1 +1,101 @@
+/*
+*
+* Copyright (c) 2024 Rafael Romão
+* SPDX-License-Identifier: MIT
+*
+*/
 
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+
+#define HOM_L 0  
+#define NAV_L 1
+#define OTH_L 2
+#define NUM_L 3
+
+/ {
+
+    combos {
+        compatible = "zmk,combos";
+        combo_bksp {
+            timeout-ms = <50>;
+            require-prior-idle-ms = <200>;
+            key-positions = <27 28>;
+            bindings = <&kp DEL>;
+        };
+    };  
+
+behaviors {
+    compatible = "zmk,behaviors";
+
+    alt_F {
+        label = "ALT_F";
+        compatible = "zmk,macro";
+        #binding-cells = <0>;
+        mods = <RALT>;
+        tap-keys = <&kp F>;  
+    };
+    alt_G {
+        label = "ALT_F";
+        compatible = "zmk,macro";
+        #binding-cells = <0>;
+        mods = <RALT>;
+        tap-keys = <&kp G>;  
+    };
+    alt_W {
+        label = "ALT_F";
+        compatible = "zmk,macro";
+        #binding-cells = <0>;
+        mods = <RALT>;
+        tap-keys = <&kp W>;  
+    };
+    alt_Q {
+        label = "ALT_F";
+        compatible = "zmk,macro";
+        #binding-cells = <0>;
+        mods = <RALT>;
+        tap-keys = <&kp Q>;  
+    };
+};
+
+    keymap {
+        compatible = "zmk,keymap";
+
+        qwerty_layer {
+            label = "Qwerty";
+            bindings = <
+                &kp ESC    &kp N1   &kp N2     &kp N3   &kp N4       &kp N5                                          &kp N6       &kp N7     &kp N8      &kp N9  &kp N0   &none
+                &kp TAB    &kp Q    &kp W      &kp E    &kp R        &kp T                                           &kp Y        &kp U      &kp I       &kp O   &kp P    &kp LBKT
+                &kp LSHFT  &kp A    &kp S      &kp D    &kp F        &kp G                                           &kp H        &kp J      &kp K       &kp L   &kp SEMI   &kp RSHFT
+                &kp LCTRL  &kp Z    &kp X      &kp C    &kp V        &kp B                                           &kp N        &kp M      &kp COMMA      &kp DOT    &kp BSLH     &none
+                                    &kp F11    &kp F2   &kp ENTER    &kp SPACE    &kp BSPC                &kp DEL    &kp SPACE    &mo NAV_L    &kp HOME   &kp END    
+                                                                      &kp LWIN    &kp LALT                &kp RALT     &kp RCTRL
+            >;
+        };
+
+        nav_layer {
+            label = "Nav";
+            bindings = <
+                &kp ESC            &kp F1                 &kp F2            &kp F3           &kp F4            &kp F5                                        &kp F6         &kp F7           &kp F8               &kp F9             &kp F10        &kp F12
+                &kp TAB            &alt_Q                 &alt_W            &kp UP             &none            &kp STAR                                       &kp LPAR       &kp EQUAL         &kp PLUS     &kp MINUS         &none      &none
+                &kp LSHIFT         &none                 &kp LEFT           &kp DOWN         &kp RIGHT         &alt_F                                 &alt_G  &kp FSLH          &none     &none          &none          &kp RSHFT
+                &kp LCTRL          &none                  &none            &none             &none       &none                                  &none    &none   &none      &none     &none          &mo OTH_L
+                                                        &kp F11            &kp F2            &kp ENTER         &kp SPACE      &none              &kp DEL    &kp SPACE    &none    &kp HOME    &kp END
+                                                                                                               &kp LWIN       &kp LALT           &kp RALT    &kp RCTRL    
+            >;
+        };
+        other_layer {
+            label = "Other";
+            bindings = <
+             &none  &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4                                          &bt BT_CLR   &none   &none   &none   &none   &none 
+             &none   &none   &none   &none   &none   &none                                                                             &none   &none   &none   &none   &none   &none 
+            &none   &none   &none   &none   &none   &none                                                                               &none   &none   &none   &none   &none   &none 
+             &none   &none   &none   &none   &none   &none                                                                               &none   &none   &none   &none   &none   &none 
+                             &none   &none   &none   &none   &none                                                        &none   &none   &none   &none   &none   
+                                                     &none   &none                                                         &none   &none 
+            >;
+        };
+
+    };
+};
