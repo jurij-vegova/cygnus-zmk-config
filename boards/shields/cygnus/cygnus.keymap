@@ -25,6 +25,40 @@
         };
     };  
 
+behaviors {
+    compatible = "zmk,behaviors";
+
+    alt_F {
+        label = "ALT_F";
+        compatible = "zmk,macro";
+        #binding-cells = <0>;
+        mods = <RALT>;
+        tap-keys = <&kp F>;  
+    };
+    alt_G {
+        label = "ALT_G";
+        compatible = "zmk,macro";
+        #binding-cells = <0>;
+        mods = <RALT>;
+        tap-keys = <&kp G>;  
+    };
+    alt_W {
+        label = "ALT_W";
+        compatible = "zmk,macro";
+        #binding-cells = <0>;
+        mods = <RALT>;
+        tap-keys = <&kp W>;  
+    };
+    alt_Q {
+        label = "ALT_Q";
+        compatible = "zmk,macro";
+        #binding-cells = <0>;
+        mods = <RALT>;
+        tap-keys = <&kp Q>;  
+    };
+};
+
+
     keymap {
         compatible = "zmk,keymap";
 
