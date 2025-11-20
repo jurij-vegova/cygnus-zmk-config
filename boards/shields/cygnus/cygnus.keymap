@@ -89,6 +89,15 @@
                 , <&macro_release &kp RALT>
                 ;
         };
+        under: under {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHIFT>
+                , <&macro_tap &kp FSLH>
+                , <&macro_release &kp LSHIFT>
+                ;
+        };
     };
 
 
@@ -110,11 +119,11 @@
         nav_layer {
            label = "Nav";
            bindings = <
-               &kp ESC            &kp F1                 &kp F2            &kp F3           &kp F4            &kp F5                                        &kp F6         &kp F7           &kp F8               &kp F9          &kp F10        &kp F12
-               &kp TAB            &alt_q                 &alt_w           &kp UP             &none            &kp STAR                                       &kp LPAR       &kp FSLH            &none               &none           &none           &none
+               &kp ESC            &kp F1                 &kp F2            &kp F3           &kp F4            &kp F5                                        &kp F6         &kp F7          &kp F8               &kp F9          &kp F10        &kp F12
+               &kp TAB            &alt_q                 &alt_w           &kp UP             &none            &kp STAR                                       &kp LPAR       &kp FSLH       &under               &none           &none           &none
                &kp LSHIFT         &none                 &kp LEFT           &kp DOWN         &kp RIGHT         &alt_f                                       &alt_g           &none          &none             &none             &none          &kp RSHFT
-               &kp LCTRL          &none                  &none            &none             &alt_v       &alt_b                                           &alt_n          &none              &none              &none             &none          &mo OTH_L
-                                                       &kp F11            &kp F2            &kp ENTER         &kp SPACE      &none              &kp DEL    &kp SPACE      &none             &kp HOME            &kp END
+               &kp LCTRL          &none                  &none            &none             &alt_v       &alt_b                                           &alt_n          &none            &none              &none             &none          &mo OTH_L
+                                                       &kp F11            &kp F2            &kp ENTER         &kp SPACE      &none              &kp DEL    &kp SPACE      &none            &kp HOME            &kp END
                                                                                                               &kp LWIN       &kp LALT           &kp RALT    &kp RCTRL    
   
            >;
