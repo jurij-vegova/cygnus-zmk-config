@@ -15,6 +15,30 @@
 
 / {
 
+    combos {
+        compatible = "zmk,combos";
+        combo_bksp {
+            timeout-ms = <50>;
+            require-prior-idle-ms = <200>;
+            key-positions = <27 28>;
+            bindings = <&kp DEL>;
+        };
+    };  
+
+behaviors {
+    compatible = "zmk,behaviors";
+
+    alt_f {
+        label = "ALT_F";
+        compatible = "zmk,macro";
+        #binding-cells = <0>;
+        mods = <RALT>;
+        tap-keys = <&kp F>;  
+    };
+};
+
+
+
     keymap {
         compatible = "zmk,keymap";
 
