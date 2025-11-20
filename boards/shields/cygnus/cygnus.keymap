@@ -35,6 +35,60 @@
                 , <&macro_release &kp RALT>
                 ;
         };
+        alt_g: alt_g {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp RALT>
+                , <&macro_tap &kp G>
+                , <&macro_release &kp RALT>
+                ;
+        };
+        alt_q: alt_q {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp RALT>
+                , <&macro_tap &kp Q>
+                , <&macro_release &kp RALT>
+                ;
+        };
+        alt_w: alt_w {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp RALT>
+                , <&macro_tap &kp W>
+                , <&macro_release &kp RALT>
+                ;
+        };
+        alt_v: alt_v {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp RALT>
+                , <&macro_tap &kp V>
+                , <&macro_release &kp RALT>
+                ;
+        };
+        alt_b: alt_b {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp RALT>
+                , <&macro_tap &kp B>
+                , <&macro_release &kp RALT>
+                ;
+        };
+        alt_n: alt_n {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp RALT>
+                , <&macro_tap &kp N>
+                , <&macro_release &kp RALT>
+                ;
+        };
     };
 
 
@@ -57,9 +111,9 @@
            label = "Nav";
            bindings = <
                &kp ESC            &kp F1                 &kp F2            &kp F3           &kp F4            &kp F5                                        &kp F6         &kp F7           &kp F8               &kp F9             &kp F10        &kp F12
-               &kp TAB            &none                 &none            &kp UP             &none            &kp STAR                                       &kp LPAR       &kp EQUAL         &kp PLUS     &kp MINUS         &none      &none
+               &kp TAB            &alt_Q                 &alt_W            &kp UP             &none            &kp STAR                                       &kp LPAR       &kp EQUAL         &kp PLUS     &kp MINUS         &none      &none
                &kp LSHIFT         &none                 &kp LEFT           &kp DOWN         &kp RIGHT         &alt_f                                 &none &kp FSLH          &none     &none          &none          &kp RSHFT
-               &kp LCTRL          &none                  &none            &none             &none       &none                                  &none    &none   &none      &none     &none          &mo OTH_L
+               &kp LCTRL          &none                  &none            &none             &alt_V       &alt_B                                  &alt_N    &none   &none      &none     &none          &mo OTH_L
                                                        &kp F11            &kp F2            &kp ENTER         &kp SPACE      &none              &kp DEL    &kp SPACE    &none    &kp HOME    &kp END
                                                                                                               &kp LWIN       &kp LALT           &kp RALT    &kp RCTRL    
   
