@@ -19,38 +19,41 @@
 macros {
     compatible = "zmk,macros";
 
-    LBKT {
-        label = "LBKT";
+    LBKT.macro {
+        label = "LBKT.macro";
         bindings = <&kp RA(F)>;
     };
-    RBKT {
-        label = "RBKT";
+    RBKT.macro {
+        label = "RBKT.macro";
         bindings = <&kp RA(G)>;
     }; 
-    LCRUVY{
-        label = "LCRUVY";
+    LCRUVY.macro{
+        label = "LCRUVY.macro";
         bindings = <&kp RA(B)>;
     };
-    RCRUVY{
-        label = "RCRUVY";
+    RCRUVY.macro{
+        label = "RCRUVY.macro";
         bindings = <&kp RA(N)>;
     };
-    EQUAL{
-        label = "EQUAL";
+    EQUAL.macro{
+        label = "EQUAL.macro";
         bindings = <&kp LS(N0)>;
     };
-    MORE{
-        label = "MORE";
+    MORE.macro{
+        label = "MORE.macro";
         bindings = <&kp RA(COMMA)>;
     };
-    LESS{
-        label = "LESS";
+    LESS.macro{
+        label = "LESS.macro";
         bindings = <&kp RA(DOT)>;
     };
-    PLUS{
-        label = "PLUS";
+    PLUS.macro{
+        label = "PLUS.macro";
         bindings = <&kp LS(PLUS)>;
     };
+    UNDER.macro{
+        label = "UNDER.macro";
+        bindings = <&kp LS(FSLH)>;
 };
 
     combos {
@@ -72,7 +75,7 @@ macros {
                 &kp ESC    &kp N1   &kp N2     &kp N3   &kp N4       &kp N5                                                   &kp N6       &kp N7     &kp N8      &kp N9  &kp N0   &none
                 &kp TAB    &kp Q    &kp W      &kp E    &kp R        &kp T                                                     &kp Y        &kp U      &kp I       &kp O   &kp P    &kp LBKT
                 &kp LSHFT  &kp A    &kp S      &kp D    &kp F        &kp G                                                     &kp H        &kp J      &kp K       &kp L   &kp SEMI   &kp RSHFT
-                &kp LCTRL  &kp Z    &kp X      &kp C    &kp V        &kp B                                                     &kp N        &kp M      &MORE      &LESS    &kp BSLH     &none
+                &kp LCTRL  &kp Z    &kp X      &kp C    &kp V        &kp B                                                     &kp N        &kp M      &kp COMMA      &kp DOT    &kp BSLH     &none
                                     &kp F11    &kp F2   &kp ENTER    &kp SPACE    &kp BSPC                         &kp DEL    &kp SPACE    &mo NAV_L    &kp HOME   &kp END    
                                                                       &kp LWIN    &kp LALT                        &kp RALT     &kp RCTRL
             >;
@@ -83,8 +86,8 @@ macros {
             bindings = <
                 &kp ESC            &kp F1                 &kp F2            &kp F3           &kp F4            &kp F5                                        &kp F6         &kp F7           &kp F8               &kp F9             &kp F10        &kp F12
                 &kp TAB            &mt RALT Q            &mt RALT W         &kp UP          &none            &kp STAR                                       &kp LPAR       & PLUS         &kp PLUS     &kp UNDER          &kp MINUS      &none
-                &kp LSHIFT         &none                 &kp LEFT           &kp DOWN         &kp RIGHT         &LBKT                                  &RBKT  &kp FSLH          &mt LSHIFT FSLH     &mt RALT N1          &none          &kp RSHFT
-                &kp LCTRL          &none                  &none            &none             &mt RALT V       &LCRUVY                                  &RCRUVY    &EQUAL   &mt RALT COMMA      &mt RALT DOT      &none          &kp RCTRL
+                &kp LSHIFT         &none                 &kp LEFT           &kp DOWN         &kp RIGHT         &LBKT.macro                                  &RBKT.macro  &kp FSLH          &UNDER.macro     &mt RALT N1          &none          &kp RSHFT
+                &kp LCTRL          &none                  &none            &none             &mt RALT V       &LCRUVY.macro                                  &RCRUVY.macro    &EQUAL.macro   &MORE.macro      &LESS.macro      &none          &kp RCTRL
                                                         &kp F11            &kp F2            &kp ENTER         &kp SPACE      &none              &kp DEL    &kp SPACE    &none    &kp HOME    &kp END
                                                                                                                &kp LWIN       &kp LALT           &kp RALT    &mo OTH_L    
             >;
