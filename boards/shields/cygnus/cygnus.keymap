@@ -33,7 +33,7 @@ behaviors {
         compatible = "zmk,behavior-mod-morph";
         #binding-cells = <0>;
         tap = <&kp F>;
-        hold-mods = <MOD_RALT>;
+        hold-mods = <RALT>;
     };
 };
 
