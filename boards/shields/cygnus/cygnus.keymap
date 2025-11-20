@@ -43,37 +43,17 @@
             >;
         };
 
-  nav_layer {
+        nav_layer {
             label = "Nav";
             bindings = <
-                &kp ESC &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F12
-
-                &kp TAB &none &none &kp UP &none &none
-                &kp LEFT &kp DOWN &kp RIGHT
-                &hold_mod bindings = <&kp F>; mods = <MOD_RSALT>    // RAlt + F
-                &hold_mod bindings = <&kp G>; mods = <MOD_RSALT>    // RAlt + G
-                &kp SLSH
-                &hold_mod bindings = <&kp SLSH>; mods = <MOD_LSFT>  // Shift + /
-                &hold_mod bindings = <&kp MINUS>; mods = <MOD_LSFT>  // Shift + -
-                &hold_mod bindings = <&kp N1>; mods = <MOD_LSFT>    // Shift + 1
-                &kp RSHIFT
-
-                &kp LCTRL &none &none &none
-                &hold_mod bindings = <&kp V>; mods = <MOD_RSALT>    // RAlt + V
-                &hold_mod bindings = <&kp B>; mods = <MOD_RSALT>    // RAlt + B
-                &hold_mod bindings = <&kp N>; mods = <MOD_RSALT>    // RAlt + N
-                &hold_mod bindings = <&kp N0>; mods = <MOD_LSFT>    // Shift + 0
-                &hold_mod bindings = <&kp COMMA>; mods = <MOD_RSALT> // RAlt + ,
-                &hold_mod bindings = <&kp DOT>; mods = <MOD_RSALT>   // RAlt + .
-                &none &mo OTH_L
-
-                &kp F11 &kp F2 &kp ENTER &kp SPACE &none &kp DEL
-                &kp SPACE &none &kp HOME &kp END &kp LWIN &kp LALT
-                &kp RALT &kp RCTRL
+                &kp ESC            &kp F1                 &kp F2            &kp F3           &kp F4            &kp F5                                        &kp F6         &kp F7           &kp F8               &kp F9             &kp F10        &kp F12
+                &kp TAB            &none                 &none             &kp UP             &none            &kp STAR                                       &kp LPAR       &kp EQUAL         &kp PLUS     &kp MINUS          &kp LS(N2)      &none
+                &kp LSHIFT         &none                 &kp LEFT           &kp DOWN         &kp RIGHT         &kp RA(F)                                  &kp RA(G)  &kp SLSH          &kp LS(SLSH)     &kp LS(MINUS)          &kp LS(N1)          &kp RSHFT
+                &kp LCTRL          &none                  &none            &none             &kp RA(V)       &kp RA(B)                                  &kp RA(N)    &kp LS(N0)   &kp RA(COMMA)      &kp RA(DOT)     &none          &mo OTH_L
+                                                        &kp F11            &kp F2            &kp ENTER         &kp SPACE      &none              &kp DEL    &kp SPACE    &none    &kp HOME    &kp END
+                                                                                                               &kp LWIN       &kp LALT           &kp RALT    &kp RCTRL    
             >;
         };
-
-
         other_layer {
             label = "Other";
             bindings = <
