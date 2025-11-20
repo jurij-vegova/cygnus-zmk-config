@@ -19,44 +19,48 @@
 macros {
     compatible = "zmk,macros";
 
-    LBKT.macro {
-        label = "LBKT.macro";
+    LBKT_macro {
+        label = "LBKT_macro";
         bindings = <&kp RA(F)>;
     };
-    RBKT.macro {
-        label = "RBKT.macro";
+    RBKT_macro {
+        label = "RBKT_macro";
         bindings = <&kp RA(G)>;
     }; 
-    LCRUVY.macro{
-        label = "LCRUVY.macro";
+    LCRUVY_macro{
+        label = "LCRUVY_macro";
         bindings = <&kp RA(B)>;
     };
-    RCRUVY.macro{
-        label = "RCRUVY.macro";
+    RCRUVY_macro{
+        label = "RCRUVY_macro";
         bindings = <&kp RA(N)>;
     };
-    EQUAL.macro{
-        label = "EQUAL.macro";
+    EQUAL_macro{
+        label = "EQUAL_macro";
         bindings = <&kp LS(N0)>;
     };
-    MORE.macro{
-        label = "MORE.macro";
+    MORE_macro{
+        label = "MORE_macro";
         bindings = <&kp RA(COMMA)>;
     };
-    LESS.macro{
-        label = "LESS.macro";
+    LESS_macro{
+        label = "LESS_macro";
         bindings = <&kp RA(DOT)>;
     };
-    PLUS.macro{
-        label = "PLUS.macro";
+    PLUS_macro{
+        label = "PLUS_macro";
         bindings = <&kp LS(PLUS)>;
     };
-    UNDER.macro{
-        label = "UNDER.macro";
+    UNDER_macro{
+        label = "UNDER_macro";
         bindings = <&kp LS(FSLH)>;
-    AT.macro{
-        label = "AT.macro";
+    AT_macro{
+        label = "AT_macro";
         bindings = <&kp RA(V)>;
+    };
+    EXCLAMATION_macro{
+        label = "EXCLAMATION_macro";
+        bindings = <&kp RA(N1)>;
     };
 };
 
@@ -90,10 +94,10 @@ macros {
             bindings = <
                 &kp ESC            &kp F1                 &kp F2            &kp F3           &kp F4            &kp F5                                        &kp F6         &kp F7           &kp F8               &kp F9             &kp F10        &kp F12
                 &kp TAB            &mt RALT Q            &mt RALT W         &kp UP          &none            &kp STAR                                       &kp LPAR       & PLUS         &kp PLUS     &kp UNDER          &kp MINUS      &none
-                &kp LSHIFT         &none                 &kp LEFT           &kp DOWN         &kp RIGHT         &LBKT.macro                                  &RBKT.macro  &kp FSLH          &UNDER.macro     &mt RALT N1          &none          &kp RSHFT
-                &kp LCTRL          &none                  &none            &none             &AT.macro       &LCRUVY.macro                                  &RCRUVY.macro    &EQUAL.macro   &MORE.macro      &LESS.macro      &none          &kp RCTRL
+                &kp LSHIFT         &none                 &kp LEFT           &kp DOWN         &kp RIGHT         &LBKT_macro                                  &RBKT_macro  &kp FSLH          &UNDER_macro     &EXCLAMATION_macro          &none          &kp RSHFT
+                &kp LCTRL          &none                  &none            &none             &AT_macro       &LCRUVY_macro                                  &RCRUVY_macro    &EQUAL_macro   &MORE_macro      &LESS_macro      &none          &mo OTH_L
                                                         &kp F11            &kp F2            &kp ENTER         &kp SPACE      &none              &kp DEL    &kp SPACE    &none    &kp HOME    &kp END
-                                                                                                               &kp LWIN       &kp LALT           &kp RALT    &mo OTH_L    
+                                                                                                               &kp LWIN       &kp LALT           &kp RALT    &kp RCTRL    
             >;
         };
         other_layer {
