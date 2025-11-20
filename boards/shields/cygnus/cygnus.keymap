@@ -54,6 +54,10 @@ macros {
     UNDER.macro{
         label = "UNDER.macro";
         bindings = <&kp LS(FSLH)>;
+    AT.macro{
+        label = "AT.macro";
+        bindings = <&kp RA(V)>;
+    };
 };
 
     combos {
@@ -87,7 +91,7 @@ macros {
                 &kp ESC            &kp F1                 &kp F2            &kp F3           &kp F4            &kp F5                                        &kp F6         &kp F7           &kp F8               &kp F9             &kp F10        &kp F12
                 &kp TAB            &mt RALT Q            &mt RALT W         &kp UP          &none            &kp STAR                                       &kp LPAR       & PLUS         &kp PLUS     &kp UNDER          &kp MINUS      &none
                 &kp LSHIFT         &none                 &kp LEFT           &kp DOWN         &kp RIGHT         &LBKT.macro                                  &RBKT.macro  &kp FSLH          &UNDER.macro     &mt RALT N1          &none          &kp RSHFT
-                &kp LCTRL          &none                  &none            &none             &mt RALT V       &LCRUVY.macro                                  &RCRUVY.macro    &EQUAL.macro   &MORE.macro      &LESS.macro      &none          &kp RCTRL
+                &kp LCTRL          &none                  &none            &none             &AT.macro       &LCRUVY.macro                                  &RCRUVY.macro    &EQUAL.macro   &MORE.macro      &LESS.macro      &none          &kp RCTRL
                                                         &kp F11            &kp F2            &kp ENTER         &kp SPACE      &none              &kp DEL    &kp SPACE    &none    &kp HOME    &kp END
                                                                                                                &kp LWIN       &kp LALT           &kp RALT    &mo OTH_L    
             >;
