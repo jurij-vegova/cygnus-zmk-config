@@ -15,8 +15,6 @@
 #define OTH_L 2
 #define MOS_L 3
 
-CONFIG_ZMK_POINTING=y
-
 / {
 
     combos {
