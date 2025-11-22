@@ -8,11 +8,14 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/pointing.h>
 
 #define HOM_L 0  
 #define NAV_L 1
 #define OTH_L 2
 #define MOS_L 3
+
+CONFIG_ZMK_POINTING=y
 
 / {
 
@@ -184,9 +187,9 @@
                 &kp ESC    &kp N1   &kp N2     &kp N3   &kp N4       &kp N5                                          &kp N6       &kp N7     &kp N8      &kp N9  &kp N0   &none
                 &kp TAB    &kp Q    &kp W      &kp E    &kp R        &kp T                                           &kp Y        &kp U      &kp I       &kp O   &kp P    &kp LBKT
                 &kp LSHFT  &kp A    &kp S      &kp D    &kp F        &kp G                                           &kp H        &kp J      &kp K       &kp L   &kp SEMI   &mt RSHFT BSLH
-                &kp LCTRL  &kp Z    &kp X      &kp C    &kp V        &kp B                                           &kp N        &kp M      &kp COMMA      &kp DOT    &none     &none
+                &kp LCTRL  &kp Z    &kp X      &kp C    &kp V        &kp B                                           &kp N        &kp M      &kp COMMA      &kp DOT    &none     &kp RCTRL
                                     &kp F11    &kp F2   &kp ENTER    &kp SPACE    &kp BSPC                &kp DEL    &kp SPACE    &mo NAV_L    &kp HOME   &kp END    
-                                                                      &kp LWIN    &kp LALT                &kp RALT     &kp RCTRL
+                                                                      &kp LWIN    &kp LALT                &kp RALT     &mo MOS_L
             >;
         };
         nav_layer {
@@ -197,7 +200,7 @@
                &kp LSHIFT         &none                 &kp LEFT           &kp DOWN         &kp RIGHT         &alt_f                                       &alt_g           &apos          &kp MINUS             &qmark             &excla          &kp RSHFT
                &kp LCTRL          &none                  &none            &none             &alt_v       &alt_b                                           &alt_n          &equal            &more              &less             &none          &mo OTH_L
                                                        &kp F11            &kp F2            &kp ENTER         &kp SPACE      &none              &kp DEL    &kp SPACE      &none            &kp HOME            &kp END
-                                                                                                              &kp LWIN       &kp LALT           &kp RALT    &kp RCTRL    
+                                                                                                              &kp LWIN       &kp LALT           &kp RALT    &none    
   
            >;
        };
@@ -216,12 +219,12 @@
        mouse_layer {
             label = "Mouse";
             bindings = <
-             &none  &none    &none    &none    &none    &none                                                                           &none   &none   &none   &none   &none   &none 
-             &none   &none   &none   &none   &none   &none                                                                              &none   &none   &none   &none   &none   &none 
-            &none   &none   &none   &none   &none   &none                                                                               &none   &none   &none   &none   &none   &none 
-             &none   &none   &none   &none   &none   &none                                                                               &none   &none   &none   &none   &none   &none 
-                             &none   &none   &none   &none   &none                                                        &none   &none   &none   &none   &none   
-                                                     &none   &none                                                         &none   &none 
+             &none  &none    &none            &none           &none             &none                                                                           &none   &none   &none   &none   &none   &none 
+             &none   &none  &msc SCRL_LEFT   &mmv MOVE_UP     &msc SCRL_RIGHT   &msc SCRL_UP                                                                              &none   &none   &none   &none   &none   &none 
+            &none   &none   &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_RIGHT   &msc SCRL_DOWN                                                                              &none   &none   &none   &none   &none   &none 
+             &none   &none   &none           &none            &none             &none                                                                               &none   &none   &none   &none   &none   &none 
+                             &none           &none            &mkp MCLK         &mkp LCLK   &mkp RCLK                                                        &none   &none   &none   &none   &none   
+                                                                                &none   &none                                                         &none   &none 
             >;
         };
 
