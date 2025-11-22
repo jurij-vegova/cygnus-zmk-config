@@ -12,6 +12,7 @@
 #define HOM_L 0  
 #define NAV_L 1
 #define OTH_L 2
+#define MOS_L 3
 
 / {
 
@@ -205,6 +206,18 @@
             bindings = <
              &none  &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4                                          &bt BT_CLR   &none   &none   &none   &none   &none 
              &none   &none   &none   &none   &none   &none                                                                             &none   &none   &none   &none   &none   &none 
+            &none   &none   &none   &none   &none   &none                                                                               &none   &none   &none   &none   &none   &none 
+             &none   &none   &none   &none   &none   &none                                                                               &none   &none   &none   &none   &none   &none 
+                             &none   &none   &none   &none   &none                                                        &none   &none   &none   &none   &none   
+                                                     &none   &none                                                         &none   &none 
+            >;
+        };
+
+       mouse_layer {
+            label = "Mouse";
+            bindings = <
+             &none  &none    &none    &none    &none    &none                                                                           &none   &none   &none   &none   &none   &none 
+             &none   &none   &none   &none   &none   &none                                                                              &none   &none   &none   &none   &none   &none 
             &none   &none   &none   &none   &none   &none                                                                               &none   &none   &none   &none   &none   &none 
              &none   &none   &none   &none   &none   &none                                                                               &none   &none   &none   &none   &none   &none 
                              &none   &none   &none   &none   &none                                                        &none   &none   &none   &none   &none   
