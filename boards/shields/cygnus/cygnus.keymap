@@ -186,7 +186,7 @@
                 &kp TAB    &kp Q    &kp W      &kp E    &kp R        &kp T                                           &kp Y        &kp U      &kp I       &kp O   &kp P    &kp LBKT
                 &kp LSHFT  &kp A    &kp S      &kp D    &kp F        &kp G                                           &kp H        &kp J      &kp K       &kp L   &kp SEMI   &mt RSHFT BSLH
                 &kp LCTRL  &kp Z    &kp X      &kp C    &kp V        &kp B                                           &kp N        &kp M      &kp COMMA      &kp DOT    &none     &kp RCTRL
-                                    &kp F11    &kp F2   &mo NAV_L    &kp SPACE    &kp BSPC                &kp DEL    &kp SPACE    &kp ENTER    &kp HOME   &kp END    
+                                    &kp F11    &kp F2   &mt NAV_L ENTER   &kp SPACE    &kp BSPC                &kp DEL    &kp SPACE    &kp ENTER    &kp HOME   &kp END    
                                                                       &kp LWIN    &kp LALT                &kp RALT     &mo MOS_L
             >;
         };
