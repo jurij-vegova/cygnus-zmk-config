@@ -12,7 +12,7 @@
 
 #define HOM_L 0  
 #define NAV_L 1
-#define OTH_L 2
+#define NUM_L 2
 #define MOS_L 3
 
 / {
@@ -24,6 +24,12 @@
             require-prior-idle-ms = <200>;
             key-positions = <39 40>;
             bindings = <&kp DEL>;
+        };
+        combo_tab {
+            timeout-ms = <50>;
+            require-prior-idle-ms = <200>;
+            key-positions = <1 2>;
+            bindings = <&kp TAB>;
         };
     };  
 
@@ -184,10 +190,10 @@
              bindings = <
             // ╷           ╷      TOTEM     ╷      TOTEM     ╷     TOTEM      ╷      TOTEM     ╷     TOTEM     ╷   ╷      TOTEM     ╷   TOTEM        ╷      TOTEM     ╷           ╷           ╷           ╷
             
-                            &kp Q       &kp W       &kp E       &kp R       &kp T           &kp Y       &kp U       &kp I       &kp O       &kp P
-                            &kp A        &kp S       &kp D       &kp F       &kp G           &kp H       &kp J       &kp K        &kp L       &kp O
-                &kp ESC       &kp Z       &kp X       &kp C       &kp V       &kp B           &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &kp BSLH                              
-                                                    &kp LWIN     &kp ENTER     &kp BSPC   &kp SPACE &mo NAV_L     &kp RALT
+                                    &kp Q       &kp W       &kp E       &kp R       &kp T                   &kp Y       &kp U       &kp I       &kp O       &kp P
+                                    &kp A        &kp S       &kp D       &kp F       &kp G                &kp H       &kp J       &kp K        &kp L       &kp O
+                &mt RSHFT ESC       &kp Z       &kp X       &kp C       &kp V       &kp B                  &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &mt RSHFT BSLH                              
+                                                    &none     &mt NAV_L ENTER    &kp BSPC                  &kp SPACE      &mt NUM_L ENTER      &none
                                     >;
         };
         nav_layer {
@@ -201,5 +207,17 @@
                                                &none     &none      &none          &none     &none   &none      
                                     >;
        };
+
+       num_layer {
+            label = "Other";
+             bindings = <
+            // ╷           ╷      TOTEM     ╷      TOTEM     ╷     TOTEM      ╷      TOTEM     ╷     TOTEM     ╷   ╷      TOTEM     ╷   TOTEM        ╷      TOTEM     ╷           ╷           ╷           ╷
+            
+                            &none     &none    &none      &none     &none          &none     &none   &none   &none   &none
+                            &none     &none    &none     &none      &none          &none     &none   &none   &none   &none
+                  &none     &none     &none    &none     &none      &none          &none     &none   &none   &none   &none  &none      
+                                               &none     &none      &none          &none     &none   &none      
+                                    >;
+        };
     };
 };
