@@ -217,7 +217,7 @@
                     &none     &kp LEFT    &kp DOWN     &kp RIGHT        &alt_f                   &alt_g     &apos   &kp MINUS    &qmark   &excla
                     &none     &none        &none        &alt_v           &alt_b  &none    &none   &alt_n      &equal   &more   &less   &tilde        
                                            &none       &none            &none                  &kp SPACE     &kp ENTER   &none      
-                                    >; 
+                                    >;
        };
 
        num_layer {
