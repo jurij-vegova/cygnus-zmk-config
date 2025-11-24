@@ -241,5 +241,6 @@
                                     &kp Z       &kp X       &kp C       &kp V       &kp B      &mt RSHFT ESC         &mt RSHFT BSLH    &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH                                  
                                                     &kp RWIN     &lt NAV_L ENTER    &kp SPACE                                                &kp SPACE      &lt NUM_L ENTER      &to HOM_L
                                     >;
+        };
     };
 };
