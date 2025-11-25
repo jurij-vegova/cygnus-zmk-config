@@ -11,10 +11,6 @@
 #include <dt-bindings/zmk/pointing.h>
 
 #define HOM_L 0  
-#define NAV_L 1
-#define NUM_L 2
-#define GAM_L 3
-#define MOS_L 4
 / {
 
     combos {
@@ -24,30 +20,6 @@
             require-prior-idle-ms = <200>;
             key-positions = <25 26>;
             bindings = <&kp DEL>;
-        };
-        combo_tab {
-            timeout-ms = <50>;
-            require-prior-idle-ms = <200>;
-            key-positions = <1 2>;
-            bindings = <&kp TAB>;
-        };
-        combo_caps {
-            timeout-ms = <50>;
-            require-prior-idle-ms = <200>;
-            key-positions = <11 12>;
-            bindings = <&kp LCAPS>;
-        };
-        combo_esc {
-            timeout-ms = <50>;
-            require-prior-idle-ms = <200>;
-            key-positions = <2 3>;
-            bindings = <&kp ESC>;
-        };
-        combo_sv {
-            timeout-ms = <50>;
-            require-prior-idle-ms = <200>;
-            key-positions = <9 10>;
-            bindings = <&kp LBKT>;
         };
     };  
 
@@ -106,96 +78,6 @@
                 , <&macro_release &kp RALT>
                 ;
         };
-        alt_n: alt_n {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp RALT>
-                , <&macro_tap &kp N>
-                , <&macro_release &kp RALT>
-                ;
-        };
-        under: under {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LSHIFT>
-                , <&macro_tap &kp FSLH>
-                , <&macro_release &kp LSHIFT>
-                ;
-        };
-        star: star {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LSHIFT>
-                , <&macro_tap &kp EQUAL>
-                , <&macro_release &kp LSHIFT>
-                ;
-        };
-        tilde: tilde {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp RALT>
-                , <&macro_tap &kp N1>
-                , <&macro_release &kp RALT>
-                ;
-        };
-        apos: apos {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LSHIFT>
-                , <&macro_tap &kp N2>
-                , <&macro_release &kp LSHIFT>
-                ;
-        };
-        qmark: qmark {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LSHIFT>
-                , <&macro_tap &kp MINUS>
-                , <&macro_release &kp LSHIFT>
-                ;
-        };
-        excla: excla {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LSHIFT>
-                , <&macro_tap &kp N1>
-                , <&macro_release &kp LSHIFT>
-                ;
-        };
-        equal: equal {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LSHIFT>
-                , <&macro_tap &kp N0>
-                , <&macro_release &kp LSHIFT>
-                ;
-        };
-        more: more {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp RALT>
-                , <&macro_tap &kp COMMA>
-                , <&macro_release &kp RALT>
-                ;
-        };
-        less: less {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp RALT>
-                , <&macro_tap &kp DOT>
-                , <&macro_release &kp RALT>
-                ;
-        };
     };
 
 
@@ -208,56 +90,12 @@
              bindings = <
             // ╷           ╷      TOTEM     ╷      TOTEM     ╷     TOTEM      ╷      TOTEM     ╷     TOTEM     ╷   ╷      TOTEM     ╷   TOTEM        ╷      TOTEM     ╷           ╷           ╷           ╷
             
-                                    &kp Q       &kp W       &kp E       &kp R       &kp T                                                                               &kp Y       &kp U       &kp I       &kp O       &kp P
-                                    &kp A        &kp S       &kp D       &mt LSHIFT F       &kp G       &mt LSHIFT ESC         &mt RSHIFT BSLH               &kp H       &mt RSHIFT J       &kp K        &kp L       &kp BSLH
-                                    &mt LCTRL Z       &kp X       &kp C       &kp V       &kp B                                                                            &kp N       &kp M       &kp COMMA   &kp DOT     &mt RCTRL FSLH                                  
-                                                    &kp RWIN     &lt NUM_L ENTER    &mt LALT BSPC                                                                         &mt RALT SPACE      &lt NAV_L     &lt MOS_L
+&none    &none    &none    &none    &none              &none    &none    &none    &none    &none  
+&none    &none    &none    &none    &none              &none    &none    &none    &none    &none    &none    &none     
+&none    &none    &none    &none    &none              &none    &none    &none    &none    &none    
+&none    &none    &none          &none    &none    &none    
                                     >;
         };
-        nav_layer {
-           label = "Nav";
-             bindings = <
-            // ╷           ╷      TOTEM     ╷      TOTEM     ╷     TOTEM      ╷      TOTEM     ╷     TOTEM     ╷   ╷      TOTEM     ╷   TOTEM        ╷      TOTEM     ╷           ╷           ╷           ╷
-            
-                     &alt_q     &alt_w        &kp UP      &none            &kp STAR                          &kp LPAR     &kp FSLH   &under   &kp EQUAL   &star
-                    &none     &kp LEFT    &kp DOWN     &kp RIGHT        &alt_f        &none    &none           &alt_g     &apos   &kp MINUS    &qmark   &excla
-                    &none     &none        &none        &alt_v           &alt_b                               &alt_n      &equal   &more   &less   &tilde        
-                                           &kp RWIN       &lt NUM_L ENTER            &mt LALT BSPC                                    &mt RALT SPACE     &none   &none      
-                                    >;
-       };
 
-       num_layer {
-            label = "Other";
-             bindings = <
-            // ╷           ╷      TOTEM     ╷      TOTEM     ╷     TOTEM      ╷      TOTEM     ╷     TOTEM     ╷   ╷      TOTEM     ╷   TOTEM        ╷      TOTEM     ╷           ╷           ╷           ╷
-            
-                    &to GAM_L     &kp F1    &kp F2      &kp F3     &kp F4                                           &kp N1     &kp N2   &kp N3   &kp N0   &none
-                    &none     &kp F5    &kp F6     &mt LCTRL F7      &mt LSHIFT F8      &none     &none         &mt RSHIFT N4     &mt RCTRL N5   &mt RALT N6   &none   &none
-                    &none     &kp F9    &kp F10    &kp F11     &kp F12                                             &kp N7    &kp N8   &kp N9   &none   &none        
-                                        &kp RWIN     &none      &mt RALT BSPC                                          &mt LALT SPACE     &none   &none      
-                                    >;
-        };
-        game_layer {
-            label = "Game";
-             bindings = <
-            // ╷           ╷      TOTEM     ╷      TOTEM     ╷     TOTEM      ╷      TOTEM     ╷     TOTEM     ╷   ╷      TOTEM     ╷   TOTEM        ╷      TOTEM     ╷           ╷           ╷           ╷
-            
-                                    &kp Q       &kp W       &kp E       &kp R       &kp T                                               &kp Y       &kp U       &kp I       &kp O       &kp P
-                                    &kp A        &kp S       &kp D       &kp F       &kp G       &mt LSHIFT ESC      &mt RSHIFT BSLH     &kp H       &kp J       &kp K        &kp L       &kp O
-                                    &kp Z       &kp X       &kp C       &kp V       &kp B                                             &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH                                  
-                                                    &kp RWIN     &kp LALT    &kp SPACE                                                &kp BSPC      &lt NAV_L ENTER      &to HOM_L
-                                    >;
-        };
-        mouse_layer {
-            label = "Mouse";
-             bindings = <
-            // ╷           ╷      TOTEM     ╷      TOTEM     ╷     TOTEM      ╷      TOTEM     ╷     TOTEM     ╷   ╷      TOTEM     ╷   TOTEM        ╷      TOTEM     ╷           ╷           ╷           ╷
-            
-                        &none    &msc SCRL_LEFT   &mmv MOVE_UP     &msc SCRL_RIGHT   &msc SCRL_UP                            &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3         &bt BT_CLR    
-                        &none    &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_RIGHT   &msc SCRL_DOWN    &none        &none    &none    &none    &none    &none    &none
-                        &none    &none    &none    &none    &none                                                            &none    &none    &none    &none    &none   
-                                  &mkp MCLK         &mkp LCLK   &mkp RCLK                                                          &none    &none    &none     
-                                    >;
-        };
     };
 };
