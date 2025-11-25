@@ -53,7 +53,7 @@
             timeout-ms = <50>;
             require-prior-idle-ms = <200>;
             key-positions = <30 31>;
-            bindings = <&comma>;
+            bindings = <&semi>;
         };
     };  
 
