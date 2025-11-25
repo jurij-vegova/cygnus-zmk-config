@@ -22,7 +22,7 @@
         combo_bksp {
             timeout-ms = <50>;
             require-prior-idle-ms = <200>;
-            key-positions = <25 26>;
+            key-positions = <24 25>;
             bindings = <&kp DEL>;
         };
         combo_tab {
