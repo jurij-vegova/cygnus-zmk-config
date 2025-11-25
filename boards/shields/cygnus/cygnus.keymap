@@ -14,7 +14,7 @@
 #define NAV_L 1
 #define NUM_L 2
 #define GAM_L 3
-
+#define MOS_L 4
 / {
 
     combos {
@@ -225,7 +225,7 @@
                                     &kp Q       &kp W       &kp E       &kp R       &kp T                                                                               &kp Y       &kp U       &kp I       &kp O       &kp P
                                     &kp A        &mt LALT S       &mt LCTRL D       &mt LSHIFT F       &kp G       &mt LSHFT ESC         &mt RSHFT BSLH               &kp H       &mt RSHIFT J       &mt RCTRL K        &mt RALT L       &kp BSHL
                                     &kp Z       &kp X       &kp C       &kp V       &kp B                                                                            &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH                                  
-                                                    &kp RWIN     &lt NUM_L ENTER    &kp BSPC                                                                         &kp SPACE      &lt NAV_L     &none
+                                                    &kp RWIN     &lt NUM_L ENTER    &kp BSPC                                                                         &kp SPACE      &lt NAV_L     &lt MOS_L
                                     >;
         };
         nav_layer {
@@ -259,7 +259,18 @@
                                     &kp Q       &kp W       &kp E       &kp R       &kp T                                               &kp Y       &kp U       &kp I       &kp O       &kp P
                                     &kp A        &kp S       &kp D       &kp F       &kp G       &mt LSHFT ESC      &mt RSHFT BSLH     &kp H       &mt RSHIFT J       &mt RCTRL K        &mt RALT L       &kp O
                                     &kp Z       &kp X       &kp C       &kp V       &kp B                                             &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH                                  
-                                                    &kp RWIN     &kp LALT    &kp SPACE                                                &kp BSPC      &lt NUM_L ENTER      &to HOM_L
+                                                    &kp RWIN     &kp LALT    &kp SPACE                                                &kp BSPC      &lt NAV_L ENTER      &to HOM_L
+                                    >;
+        };
+        mouse_layer {
+            label = "Mouse";
+             bindings = <
+            // ╷           ╷      TOTEM     ╷      TOTEM     ╷     TOTEM      ╷      TOTEM     ╷     TOTEM     ╷   ╷      TOTEM     ╷   TOTEM        ╷      TOTEM     ╷           ╷           ╷           ╷
+            
+                        &none    &none    &none    &none    &none                          &none    &none    &none    &none    &none    
+                        &none    &none    &none    &none    &none    &none        &none    &none    &none    &none    &none    &none
+                        &none    &none    &none    &none    &none                          &none    &none    &none    &none    &none   
+                                            &none    &none    &none                          &none    &none    &none     
                                     >;
         };
     };
