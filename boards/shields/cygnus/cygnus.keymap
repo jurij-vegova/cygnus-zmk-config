@@ -247,7 +247,7 @@
             // ╷           ╷      TOTEM     ╷      TOTEM     ╷     TOTEM      ╷      TOTEM     ╷     TOTEM     ╷   ╷      TOTEM     ╷   TOTEM        ╷      TOTEM     ╷           ╷           ╷           ╷
             
                     &to GAM_L     &kp F1    &kp F2      &kp F3     &kp F4                                           &kp N1     &kp N2   &kp N3   &kp N0   &none
-                    &none     &kp F5    &mt LALT F6     &mt LCTRL F7      &mt LSHIFT F8      &non     &none         &mt RSHIFT N4     &mt RCTRL N5   &mt RALT N6   &none   &none
+                    &none     &kp F5    &mt LALT F6     &mt LCTRL F7      &mt LSHIFT F8      &none     &none         &mt RSHIFT N4     &mt RCTRL N5   &mt RALT N6   &none   &none
                     &none     &kp F9    &kp F10    &kp F11     &kp F12                                             &kp N7    &kp N8   &kp N9   &none   &none        
                                         &trans     &none      &kp LALT                                          &none     &none   &none      
                                     >;
