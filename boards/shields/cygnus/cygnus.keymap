@@ -209,9 +209,9 @@
             // ╷           ╷      TOTEM     ╷      TOTEM     ╷     TOTEM      ╷      TOTEM     ╷     TOTEM     ╷   ╷      TOTEM     ╷   TOTEM        ╷      TOTEM     ╷           ╷           ╷           ╷
             
                                     &kp Q       &kp W       &kp E       &kp R       &kp T                                                                               &kp Y       &kp U       &kp I       &kp O       &kp P
-                                    &kp A        &mt LALT S       &mt LCTRL D       &mt LSHIFT F       &kp G       &mt LSHIFT ESC         &mt RSHIFT BSLH               &kp H       &mt RSHIFT J       &mt RCTRL K        &mt RALT L       &kp BSLH
-                                    &kp Z       &kp X       &kp C       &kp V       &kp B                                                                            &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH                                  
-                                                    &kp RWIN     &lt NUM_L ENTER    &kp BSPC                                                                         &kp SPACE      &lt NAV_L     &lt MOS_L
+                                    &kp A        &kp S       &kp D       &mt LSHIFT F       &kp G       &mt LSHIFT ESC         &mt RSHIFT BSLH               &kp H       &mt RSHIFT J       &kp K        &kp L       &kp BSLH
+                                    &mt LCTRL Z       &kp X       &kp C       &kp V       &kp B                                                                            &kp N       &kp M       &kp COMMA   &kp DOT     &mt RCTRL FSLH                                  
+                                                    &kp RWIN     &lt NUM_L ENTER    &mt LALT BSPC                                                                         &mt RALT SPACE      &lt NAV_L     &lt MOS_L
                                     >;
         };
         nav_layer {
@@ -222,7 +222,7 @@
                      &alt_q     &alt_w        &kp UP      &none            &kp STAR                          &kp LPAR     &kp FSLH   &under   &kp EQUAL   &star
                     &none     &kp LEFT    &kp DOWN     &kp RIGHT        &alt_f        &none    &none           &alt_g     &apos   &kp MINUS    &qmark   &excla
                     &none     &none        &none        &alt_v           &alt_b                               &alt_n      &equal   &more   &less   &tilde        
-                                           &trans       &trans            &trans                                    &none     &none   &none      
+                                           &kp RWIN       &lt NUM_L ENTER            &mt LALT BSPC                                    &mt RALT SPACE     &none   &none      
                                     >;
        };
 
@@ -232,9 +232,9 @@
             // ╷           ╷      TOTEM     ╷      TOTEM     ╷     TOTEM      ╷      TOTEM     ╷     TOTEM     ╷   ╷      TOTEM     ╷   TOTEM        ╷      TOTEM     ╷           ╷           ╷           ╷
             
                     &to GAM_L     &kp F1    &kp F2      &kp F3     &kp F4                                           &kp N1     &kp N2   &kp N3   &kp N0   &none
-                    &none     &kp F5    &mt LALT F6     &mt LCTRL F7      &mt LSHIFT F8      &none     &none         &mt RSHIFT N4     &mt RCTRL N5   &mt RALT N6   &none   &none
+                    &none     &kp F5    &kp F6     &mt LCTRL F7      &mt LSHIFT F8      &none     &none         &mt RSHIFT N4     &mt RCTRL N5   &mt RALT N6   &none   &none
                     &none     &kp F9    &kp F10    &kp F11     &kp F12                                             &kp N7    &kp N8   &kp N9   &none   &none        
-                                        &trans     &none      &kp LALT                                          &none     &none   &none      
+                                        &kp RWIN     &none      &mt RALT BSPC                                          &mt LALT SPACE     &none   &none      
                                     >;
         };
         game_layer {
@@ -243,7 +243,7 @@
             // ╷           ╷      TOTEM     ╷      TOTEM     ╷     TOTEM      ╷      TOTEM     ╷     TOTEM     ╷   ╷      TOTEM     ╷   TOTEM        ╷      TOTEM     ╷           ╷           ╷           ╷
             
                                     &kp Q       &kp W       &kp E       &kp R       &kp T                                               &kp Y       &kp U       &kp I       &kp O       &kp P
-                                    &kp A        &kp S       &kp D       &kp F       &kp G       &mt LSHIFT ESC      &mt RSHIFT BSLH     &kp H       &mt RSHIFT J       &mt RCTRL K        &mt RALT L       &kp O
+                                    &kp A        &kp S       &kp D       &kp F       &kp G       &mt LSHIFT ESC      &mt RSHIFT BSLH     &kp H       &kp J       &kp K        &kp L       &kp O
                                     &kp Z       &kp X       &kp C       &kp V       &kp B                                             &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH                                  
                                                     &kp RWIN     &kp LALT    &kp SPACE                                                &kp BSPC      &lt NAV_L ENTER      &to HOM_L
                                     >;
