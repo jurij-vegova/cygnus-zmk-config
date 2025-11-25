@@ -199,7 +199,7 @@
                                     &kp Q       &kp W       &kp E       &kp R       &kp T                                                                               &kp Y       &kp U       &kp I       &kp O             &kp P
                                     &kp A        &kp S       &kp D       &kp F       &kp G       &mt LSHIFT ESC         &mt RSHIFT BSLH               &kp H       &kp J       &kp K        &kp L             &kp SEMI
                                     &mt LCTRL Z       &kp X       &kp C       &kp V       &kp B                                                                            &kp N       &kp M       &kp COMMA   &kp DOT     &mt RCTRL LBKT                                  
-                                                    &kp RWIN     &lt NUM_L ENTER    &mt LALT BSPC                                                                         &mt RALT SPACE      &lt NAV_L     &none
+                                                    &kp RWIN     &lt NUM_L ENTER    &mt LALT BSPC                                                                         &mt RALT SPACE      &lt NAV_L ENTER    &none
                                     >;
         };
         nav_layer {
