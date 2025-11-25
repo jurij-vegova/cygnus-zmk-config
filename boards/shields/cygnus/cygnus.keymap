@@ -222,10 +222,10 @@
              bindings = <
             // ╷           ╷      TOTEM     ╷      TOTEM     ╷     TOTEM      ╷      TOTEM     ╷     TOTEM     ╷   ╷      TOTEM     ╷   TOTEM        ╷      TOTEM     ╷           ╷           ╷           ╷
             
-                                    &kp Q       &kp W       &kp E       &kp R       &kp T                                               &kp Y       &kp U       &kp I       &kp O       &kp P
-                                    &kp A        &mt LALT S       &mt LCTRL D       &mt LSHIFT F       &kp G                      &kp H       &mt RSHIFT J       &mt RCTRL K        &mt RALT L       &kp BSHL
-                                    &kp Z       &kp X       &kp C       &kp V       &kp B      &mt LSHFT ESC         &mt RSHFT BSLH    &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH                                  
-                                                    &kp RWIN     &lt NUM_L ENTER    &kp BSPC                                                &kp SPACE      &lt NAV_L     &none
+                                    &kp Q       &kp W       &kp E       &kp R       &kp T                                                                               &kp Y       &kp U       &kp I       &kp O       &kp P
+                                    &kp A        &mt LALT S       &mt LCTRL D       &mt LSHIFT F       &kp G       &mt LSHFT ESC         &mt RSHFT BSLH               &kp H       &mt RSHIFT J       &mt RCTRL K        &mt RALT L       &kp BSHL
+                                    &kp Z       &kp X       &kp C       &kp V       &kp B                                                                            &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH                                  
+                                                    &kp RWIN     &lt NUM_L ENTER    &kp BSPC                                                                         &kp SPACE      &lt NAV_L     &none
                                     >;
         };
         nav_layer {
@@ -233,10 +233,10 @@
              bindings = <
             // ╷           ╷      TOTEM     ╷      TOTEM     ╷     TOTEM      ╷      TOTEM     ╷     TOTEM     ╷   ╷      TOTEM     ╷   TOTEM        ╷      TOTEM     ╷           ╷           ╷           ╷
             
-                     &alt_q     &alt_w        &kp UP      &none            &kp STAR              &kp LPAR     &kp FSLH   &under   &kp EQUAL   &star
-                    &none     &kp LEFT    &kp DOWN     &kp RIGHT        &alt_f                   &alt_g     &apos   &kp MINUS    &qmark   &excla
-                    &none     &none        &none        &alt_v           &alt_b  &none    &none   &alt_n      &equal   &more   &less   &tilde        
-                                           &none       &none            &none                  &kp SPACE     &kp ENTER   &none      
+                     &alt_q     &alt_w        &kp UP      &none            &kp STAR                          &kp LPAR     &kp FSLH   &under   &kp EQUAL   &star
+                    &none     &kp LEFT    &kp DOWN     &kp RIGHT        &alt_f        &none    &none           &alt_g     &apos   &kp MINUS    &qmark   &excla
+                    &none     &none        &none        &alt_v           &alt_b                               &alt_n      &equal   &more   &less   &tilde        
+                                           &none       &none            &none                                    &kp SPACE     &kp ENTER   &none      
                                     >;
        };
 
@@ -245,9 +245,9 @@
              bindings = <
             // ╷           ╷      TOTEM     ╷      TOTEM     ╷     TOTEM      ╷      TOTEM     ╷     TOTEM     ╷   ╷      TOTEM     ╷   TOTEM        ╷      TOTEM     ╷           ╷           ╷           ╷
             
-                    &to GAM_L     &kp F1    &kp F2      &kp F3     &kp F4                                         &kp N1     &kp N2   &kp N3   &kp N0   &none
-                    &none     &kp F5    &mt LALT F6     &mt LCTRL F7      &mt LSHIFT F8               &mt RSHIFT N4     &mt RCTRL N5   &mt RALT N6   &none   &none
-                    &none     &kp F9    &kp F10    &kp F11     &kp F12  &none                               &none   &kp N7    &kp N8   &kp N9   &none   &none        
+                    &to GAM_L     &kp F1    &kp F2      &kp F3     &kp F4                                           &kp N1     &kp N2   &kp N3   &kp N0   &none
+                    &none     &kp F5    &mt LALT F6     &mt LCTRL F7      &mt LSHIFT F8      &non     &none         &mt RSHIFT N4     &mt RCTRL N5   &mt RALT N6   &none   &none
+                    &none     &kp F9    &kp F10    &kp F11     &kp F12                                             &kp N7    &kp N8   &kp N9   &none   &none        
                                         &kp RWIN     &none      &kp LALT                                          &none     &none   &none      
                                     >;
         };
@@ -257,8 +257,8 @@
             // ╷           ╷      TOTEM     ╷      TOTEM     ╷     TOTEM      ╷      TOTEM     ╷     TOTEM     ╷   ╷      TOTEM     ╷   TOTEM        ╷      TOTEM     ╷           ╷           ╷           ╷
             
                                     &kp Q       &kp W       &kp E       &kp R       &kp T                                               &kp Y       &kp U       &kp I       &kp O       &kp P
-                                    &kp A        &kp S       &kp D       &kp F       &kp G                                           &kp H       &mt RSHIFT J       &mt RCTRL K        &mt RALT L       &kp O
-                                    &kp Z       &kp X       &kp C       &kp V       &kp B      &mt LSHFT ESC         &mt RSHFT BSLH    &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH                                  
+                                    &kp A        &kp S       &kp D       &kp F       &kp G       &mt LSHFT ESC      &mt RSHFT BSLH     &kp H       &mt RSHIFT J       &mt RCTRL K        &mt RALT L       &kp O
+                                    &kp Z       &kp X       &kp C       &kp V       &kp B                                             &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH                                  
                                                     &kp RWIN     &kp LALT    &kp SPACE                                                &kp BSPC      &lt NUM_L ENTER      &to HOM_L
                                     >;
         };
