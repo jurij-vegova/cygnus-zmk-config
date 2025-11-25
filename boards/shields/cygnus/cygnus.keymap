@@ -43,6 +43,18 @@
             key-positions = <2 3>;
             bindings = <&kp ESC>;
         };
+        combo_sv {
+            timeout-ms = <50>;
+            require-prior-idle-ms = <200>;
+            key-positions = <9 10>;
+            bindings = <&kp LBKT;
+        };
+        combo_semi {
+            timeout-ms = <50>;
+            require-prior-idle-ms = <200>;
+            key-positions = <9 10>;
+            bindings = <&comma;
+        };
     };  
 
     macros {
@@ -190,6 +202,14 @@
                 , <&macro_release &kp RALT>
                 ;
         };
+        semi: semi {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHIFT>
+                , <&macro_tap &kp COMMA>
+                , <&macro_release &kp LSHIFT>
+                ;
     };
 
 
@@ -203,9 +223,9 @@
             // ╷           ╷      TOTEM     ╷      TOTEM     ╷     TOTEM      ╷      TOTEM     ╷     TOTEM     ╷   ╷      TOTEM     ╷   TOTEM        ╷      TOTEM     ╷           ╷           ╷           ╷
             
                                     &kp Q       &kp W       &kp E       &kp R       &kp T                                               &kp Y       &kp U       &kp I       &kp O       &kp P
-                                    &kp A        &mt LALT S       &mt LCTRL D       &mt LSHIFT F       &kp G                      &kp H       &mt RSHIFT J       &mt RCTRL K        &mt RALT L       &kp O
-                                    &kp Z       &kp X       &kp C       &kp V       &kp B      &mt RSHFT ESC         &mt RSHFT BSLH    &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH                                  
-                                                    &kp RWIN     &lt NAV_L ENTER    &kp BSPC                                                &kp SPACE      &lt NUM_L ENTER      &none
+                                    &kp A        &mt LALT S       &mt LCTRL D       &mt LSHIFT F       &kp G                      &kp H       &mt RSHIFT J       &mt RCTRL K        &mt RALT L       &kp BSHL
+                                    &kp Z       &kp X       &kp C       &kp V       &kp B      &mt LSHFT ESC         &mt RSHFT BSLH    &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH                                  
+                                                    &kp RWIN     &lt NUM_L ENTER    &kp BSPC                                                &kp SPACE      &lt NAV_L     &none
                                     >;
         };
         nav_layer {
@@ -228,7 +248,7 @@
                     &to GAM_L     &kp F1    &kp F2      &kp F3     &kp F4                                         &kp N1     &kp N2   &kp N3   &none   &none
                     &none     &kp F5    &mt LALT F6     &mt LCTRL F7      &mt LSHIFT F8                   &mt RSHIFT N4     &mt RCTRL N5   &mt RALT N6   &none   &none
                     &none     &kp F9    &kp F10    &kp F11     &kp F12  &none                               &none   &kp N7    &kp N8   &kp N9   &none   &none        
-                                        &kp RWIN     &none      &none                                          &kp SPACE     &kp ENTER   &kp N0      
+                                        &kp RWIN     &none      &none                                          &kp SPACE     &none   &kp N0      
                                     >;
         };
         game_layer {
@@ -238,8 +258,8 @@
             
                                     &kp Q       &kp W       &kp E       &kp R       &kp T                                               &kp Y       &kp U       &kp I       &kp O       &kp P
                                     &kp A        &kp S       &kp D       &kp F       &kp G                                           &kp H       &mt RSHIFT J       &mt RCTRL K        &mt RALT L       &kp O
-                                    &kp Z       &kp X       &kp C       &kp V       &kp B      &mt RSHFT ESC         &mt RSHFT BSLH    &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH                                  
-                                                    &kp RWIN     &lt NAV_L ENTER    &kp SPACE                                                &kp SPACE      &lt NUM_L ENTER      &to HOM_L
+                                    &kp Z       &kp X       &kp C       &kp V       &kp B      &mt LSHFT ESC         &mt RSHFT BSLH    &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH                                  
+                                                    &kp RWIN     &kp LALT    &kp SPACE                                                &kp SPACE      &lt NUM_L ENTER      &to HOM_L
                                     >;
         };
     };
